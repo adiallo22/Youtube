@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     var videoDelegate : VideoInfo!
 
-    let key = "AIzaSyC3qzdL9eay1rGH6ap9P7jzGRzLpmno4Vo"
+    private let key = "AIzaSyC3qzdL9eay1rGH6ap9P7jzGRzLpmno4Vo"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,42 +50,32 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchClicked(_ sender: UIButton) {
-        let urlString = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=\(searchtf.text!)&type=video&key=\(String(describing: key))"
-        guard let url = URL.init(string: urlString) else { return }
-        let task = URLSession.init(configuration: .default).dataTask(with: url) { (data, response, error) in
+        guard let input = searchtf.text else { return }
+        DownloadService.shared.fetchVideos(withInput: input, andKey: key) { (items, error) in
             if error != nil {
-                print(error!.localizedDescription)
+                print(error?.localizedDescription)
             } else {
-                if let existingdata = data {
-                    do {
-                        let parse = try JSONSerialization.jsonObject(with: existingdata, options: []) as! [String:Any]
-                        let items = parse["items"] as! NSArray
-                        for item in items {
-                            let vid = item as! [String:Any]
-                            //retrieve videoID
-                            let id = vid["id"] as! [String:Any]
-                            let videoID = id["videoId"] as! String
-                            //retrieve title
-                            let snippet = vid["snippet"] as! [String:Any]
-                            let title = snippet["title"] as! String
-                            //retrieve image url
-                            let thumbnails = snippet["thumbnails"] as! [String:Any]
-                            let def = thumbnails["medium"] as! [String:Any]
-                            let imageURL = def["url"] as! String
-                            //create a video and append
-                            DispatchQueue.main.async {
-                                let video = Video(title: title, id: videoID, imageLink: imageURL)
-                                self.videos.insert(video, at: 0)
-                                //self.table.reloadData()
-                            }
-                        }
-                    } catch {
-                        print(error.localizedDescription)
+                guard let items = items else { return }
+                for item in items {
+                    let vid = item as! [String:Any]
+                    //retrieve videoID
+                    let id = vid["id"] as! [String:Any]
+                    let videoID = id["videoId"] as! String
+                    //retrieve title
+                    let snippet = vid["snippet"] as! [String:Any]
+                    let title = snippet["title"] as! String
+                    //retrieve image url
+                    let thumbnails = snippet["thumbnails"] as! [String:Any]
+                    let def = thumbnails["medium"] as! [String:Any]
+                    let imageURL = def["url"] as! String
+                    //create a video and append
+                    DispatchQueue.main.async {
+                        let video = Video(title: title, id: videoID, imageLink: imageURL)
+                        self.videos.insert(video, at: 0)
                     }
                 }
             }
         }
-        task.resume()
     }
     
 }
