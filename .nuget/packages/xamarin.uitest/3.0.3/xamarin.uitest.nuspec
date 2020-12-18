@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Xamarin.UITest</id>
+    <version>3.0.3</version>
+    <title>Xamarin.UITest</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>https://docs.microsoft.com/appcenter/test-cloud/uitest/</projectUrl>
+    <iconUrl>https://s3-eu-west-1.amazonaws.com/xtc-uitest/logos/UITest_64x64.png</iconUrl>
+    <description>UI Automation Framework for testing Android and iOS apps.</description>
+    <releaseNotes>id: fcdb20ff-5703-4d7b-9f06-9759ca379030
+title: Xamarin.UITest.3.0.3
+
+## Improvements
+
+* Adds System.Net.Http.HttpRequestException to the list of retry exceptions to allow mono 6.x support
+* Updates iOSDeviceManager and DeviceAgent to latest version due to breaking change in Apple CLI tooling on Xcode 10.x
+
+## Known Limitations
+
+* [Android] ClearAppData does not work on Samsung Galaxy A8 and may cause app launch failures.
+* [iOS] Suspected timing issue running on iOS locally may result in connection failures to the test server running on a simulator. Running Console.app and reading simulator logs while testing may offer a workaround for this issue.</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+  </metadata>
+</package>

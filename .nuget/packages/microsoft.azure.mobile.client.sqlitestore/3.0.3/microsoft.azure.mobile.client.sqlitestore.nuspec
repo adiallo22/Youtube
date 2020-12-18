@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Azure.Mobile.Client.SQLiteStore</id>
+    <version>3.0.3</version>
+    <title>Azure Mobile SQLiteStore</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft, azure-sdk</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=286110</licenseUrl>
+    <projectUrl>https://github.com/Azure/azure-mobile-apps-net-client/</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288890</iconUrl>
+    <description>This library provides features for creating offline sync-enabled Windows and Xamarin mobile apps that connect to Azure Mobile Apps. It provides an implementation of a local store based on SQLite. To learn more about Azure Mobile, go to http://azure.microsoft.com/mobile.</description>
+    <summary>Azure Mobile Apps offline store for SQLite</summary>
+    <releaseNotes>https://github.com/Azure/azure-mobile-apps-net-client/blob/master/CHANGELOG.md</releaseNotes>
+    <language>en-US</language>
+    <tags>microsoft windows azure mobile apps services windowsazureofficial</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="6.0.4" />
+      <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+      <dependency id="Microsoft.Bcl" version="1.1.10" />
+      <dependency id="Microsoft.Net.Http" version="2.2.29" />
+      <dependency id="Microsoft.Azure.Mobile.Client" version="3.0.3" />
+      <dependency id="SQLitePCLRaw.bundle_green" version="1.0.0" />
+      <dependency id="SQLitePCLRaw.core" version="1.0.0" />
+    </dependencies>
+  </metadata>
+</package>

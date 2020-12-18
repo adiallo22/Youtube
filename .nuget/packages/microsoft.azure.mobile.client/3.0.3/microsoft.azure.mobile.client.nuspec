@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Azure.Mobile.Client</id>
+    <version>3.0.3</version>
+    <title>Azure Mobile Client SDK</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft, azure-sdk</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=286110</licenseUrl>
+    <projectUrl>https://github.com/Azure/azure-mobile-apps-net-client</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288890</iconUrl>
+    <description>This library provides features for creating Windows and Xamarin mobile apps that connect to Azure Mobile Apps. Azure Mobile Apps allows you to develop an app with a scalable backed hosted in Azure App Service, with support for mobile authentication, offline sync, and push notifications. To learn more about Azure Mobile, go to http://azure.microsoft.com/mobile.</description>
+    <summary>Azure Mobile Apps SDK</summary>
+    <releaseNotes>https://github.com/Azure/azure-mobile-apps-net-client/blob/master/CHANGELOG.md</releaseNotes>
+    <language>en-US</language>
+    <tags>microsoft windows azure mobile apps services windowsazureofficial</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="6.0.4" />
+      <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+      <dependency id="Microsoft.Bcl" version="1.1.10" />
+      <dependency id="Microsoft.Net.Http" version="2.2.29" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

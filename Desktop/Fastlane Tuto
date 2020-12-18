@@ -1,0 +1,56 @@
+Fastlane
+
+we start by typing : >bundle init
+which create the Gemfile file. 
+
+Inside the Gemfile, we need to add `gem "fastlane"`
+then >bundle install
+to install fastlane
+
+>fastlane init
+to initialiaze fastlane
+then open the fastfile file to write the lanes
+
+/**** example *****
+desc "Description of what the lane does"
+  lane :custom_lane do
+    //do xyz here
+  end
+**/
+above in the comments are is needed to execute lanes
+
+>fastlane lanes 
+execute all the lanes
+
+>fastlane ios build
+is to build 
+
+inside the fastlane file it is recommended to create these following file 
+    -> .env - .env.secret - .env.ios
+    
+
+
+
+
+
+
+
+
+
+
+
+
+FASTLANE_USER=abduldiallo196@icloud.com 
+FASTLANE_TEAM_NAME=Abdul Diallo
+FASTLANE_ITC_TEAM=Abdul Software LLC.
+
+PRODUCE_APP_ID=com.abdulCo.Choizi
+PRODUCE_APP_NAME=Choizi
+PRODUCE_VERSION=1.0.0
+PRODUCE_SKU=choizi_fastlanated_001
+PRODUCE_PLATFORMS=ios
+
+MATCH_USERNAME=abduldiallo196@icloud.com
+MATCH_GIT_URL=
+MATCH_APP_IDENTIDER=com.abdulCo.Choizi
+MATCH_TYPE=appstore

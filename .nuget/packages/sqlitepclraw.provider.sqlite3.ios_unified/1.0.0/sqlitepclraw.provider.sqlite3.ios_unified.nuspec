@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata minClientVersion="2.8.1">
+    <id>SQLitePCLRaw.provider.sqlite3.ios_unified</id>
+    <version>1.0.0</version>
+    <title>SQLitePCLRaw.provider.sqlite3.ios_unified</title>
+    <authors>Eric Sink, et al</authors>
+    <owners>Eric Sink</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.github.com/ericsink/SQLitePCL.raw/master/LICENSE.TXT</licenseUrl>
+    <projectUrl>https://github.com/ericsink/SQLitePCL.raw</projectUrl>
+    <description>A SQLitePCLRaw provider bridges the gap between SQLitePCLRaw.core and a particular instance of the native SQLite library.  Install this package in your app project and call SQLitePCL.raw.SetProvider(new SQLitePCL.SQLite3Provider_sqlite3());  Depending on the platform, you may also need to add one of the SQLitePCLRaw.lib.* packages.</description>
+    <summary>A Portable Class Library (PCL) for low-level (raw) access to SQLite</summary>
+    <releaseNotes>1.0 release.  Contains minor breaking changes since 0.9.x.  All package names now begin with SQLitePCLRaw.  Now supports netstandard.  Fixes for UWP and Android N.  Change all unit tests to xunit.  Support for winsqlite3.dll and custom SQLite builds.</releaseNotes>
+    <copyright>Copyright 2014-2016 Zumero, LLC</copyright>
+    <tags>sqlite pcl database monotouch ios monodroid android wp8 wpa</tags>
+    <dependencies>
+      <group targetFramework="Xamarin.iOS1.0">
+        <dependency id="SQLitePCLRaw.core" version="1.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

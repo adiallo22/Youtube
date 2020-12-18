@@ -1,0 +1,2227 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@6.14.8
+3 info using node@v14.15.0
+4 verbose npm-session 787ddf3bf304cebc
+5 silly install runPreinstallTopLevelLifecycles
+6 silly preinstall notes_grpc@1.0.0
+7 info lifecycle notes_grpc@1.0.0~preinstall: notes_grpc@1.0.0
+8 silly install loadCurrentTree
+9 silly install readLocalPackageData
+10 timing stage:loadCurrentTree Completed in 58ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 1ms
+14 silly install loadShrinkwrap
+15 timing stage:loadIdealTree:loadShrinkwrap Completed in 85ms
+16 silly install loadAllDepsIntoIdealTree
+17 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 84ms
+18 timing stage:loadIdealTree Completed in 197ms
+19 silly currentTree notes_grpc@1.0.0
+19 silly currentTree ├─┬ @grpc/proto-loader@0.3.0
+19 silly currentTree │ ├── long@4.0.0
+19 silly currentTree │ └─┬ protobufjs@6.8.8
+19 silly currentTree │   └── @types/node@10.9.4
+19 silly currentTree ├── @protobufjs/aspromise@1.1.2
+19 silly currentTree ├── @protobufjs/base64@1.1.2
+19 silly currentTree ├── @protobufjs/codegen@2.0.4
+19 silly currentTree ├── @protobufjs/eventemitter@1.1.0
+19 silly currentTree ├── @protobufjs/fetch@1.1.0
+19 silly currentTree ├── @protobufjs/float@1.0.2
+19 silly currentTree ├── @protobufjs/inquire@1.1.0
+19 silly currentTree ├── @protobufjs/path@1.1.2
+19 silly currentTree ├── @protobufjs/pool@1.1.0
+19 silly currentTree ├── @protobufjs/utf8@1.1.0
+19 silly currentTree ├── @types/lodash@4.14.116
+19 silly currentTree ├── @types/long@4.0.0
+19 silly currentTree ├── @types/node@9.6.31
+19 silly currentTree ├── lodash@4.17.10
+19 silly currentTree └── uuid@3.3.2
+20 silly idealTree notes_grpc@1.0.0
+20 silly idealTree ├─┬ @grpc/proto-loader@0.3.0
+20 silly idealTree │ ├── long@4.0.0
+20 silly idealTree │ └─┬ protobufjs@6.8.8
+20 silly idealTree │   └── @types/node@10.9.4
+20 silly idealTree ├── @protobufjs/aspromise@1.1.2
+20 silly idealTree ├── @protobufjs/base64@1.1.2
+20 silly idealTree ├── @protobufjs/codegen@2.0.4
+20 silly idealTree ├── @protobufjs/eventemitter@1.1.0
+20 silly idealTree ├── @protobufjs/fetch@1.1.0
+20 silly idealTree ├── @protobufjs/float@1.0.2
+20 silly idealTree ├── @protobufjs/inquire@1.1.0
+20 silly idealTree ├── @protobufjs/path@1.1.2
+20 silly idealTree ├── @protobufjs/pool@1.1.0
+20 silly idealTree ├── @protobufjs/utf8@1.1.0
+20 silly idealTree ├── @types/lodash@4.14.116
+20 silly idealTree ├── @types/long@4.0.0
+20 silly idealTree ├── @types/node@9.6.31
+20 silly idealTree ├── ansi-regex@2.1.1
+20 silly idealTree ├── ascli@1.0.1
+20 silly idealTree ├── balanced-match@1.0.0
+20 silly idealTree ├── brace-expansion@1.1.11
+20 silly idealTree ├── bytebuffer@5.0.1
+20 silly idealTree ├── camelcase@2.1.1
+20 silly idealTree ├── cliui@3.2.0
+20 silly idealTree ├── code-point-at@1.1.0
+20 silly idealTree ├── colour@0.7.1
+20 silly idealTree ├── concat-map@0.0.1
+20 silly idealTree ├── decamelize@1.2.0
+20 silly idealTree ├── fs.realpath@1.0.0
+20 silly idealTree ├── glob@7.1.3
+20 silly idealTree ├─┬ grpc@1.14.1
+20 silly idealTree │ ├── abbrev@1.1.1
+20 silly idealTree │ ├── ansi-regex@2.1.1
+20 silly idealTree │ ├── aproba@1.2.0
+20 silly idealTree │ ├── are-we-there-yet@1.1.5
+20 silly idealTree │ ├── balanced-match@1.0.0
+20 silly idealTree │ ├── brace-expansion@1.1.11
+20 silly idealTree │ ├── chownr@1.0.1
+20 silly idealTree │ ├── code-point-at@1.1.0
+20 silly idealTree │ ├── concat-map@0.0.1
+20 silly idealTree │ ├── console-control-strings@1.1.0
+20 silly idealTree │ ├── core-util-is@1.0.2
+20 silly idealTree │ ├── debug@2.6.9
+20 silly idealTree │ ├── deep-extend@0.6.0
+20 silly idealTree │ ├── delegates@1.0.0
+20 silly idealTree │ ├── detect-libc@1.0.3
+20 silly idealTree │ ├── fs-minipass@1.2.5
+20 silly idealTree │ ├── fs.realpath@1.0.0
+20 silly idealTree │ ├── gauge@2.7.4
+20 silly idealTree │ ├── glob@7.1.2
+20 silly idealTree │ ├── has-unicode@2.0.1
+20 silly idealTree │ ├── iconv-lite@0.4.23
+20 silly idealTree │ ├── ignore-walk@3.0.1
+20 silly idealTree │ ├── inflight@1.0.6
+20 silly idealTree │ ├── inherits@2.0.3
+20 silly idealTree │ ├── ini@1.3.5
+20 silly idealTree │ ├── is-fullwidth-code-point@1.0.0
+20 silly idealTree │ ├── isarray@1.0.0
+20 silly idealTree │ ├── minimatch@3.0.4
+20 silly idealTree │ ├── minimist@1.2.0
+20 silly idealTree │ ├── minipass@2.3.3
+20 silly idealTree │ ├── minizlib@1.1.0
+20 silly idealTree │ ├─┬ mkdirp@0.5.1
+20 silly idealTree │ │ └── minimist@0.0.8
+20 silly idealTree │ ├── ms@2.0.0
+20 silly idealTree │ ├── needle@2.2.2
+20 silly idealTree │ ├── node-pre-gyp@0.10.3
+20 silly idealTree │ ├── nopt@4.0.1
+20 silly idealTree │ ├── npm-bundled@1.0.3
+20 silly idealTree │ ├── npm-packlist@1.1.11
+20 silly idealTree │ ├── npmlog@4.1.2
+20 silly idealTree │ ├── number-is-nan@1.0.1
+20 silly idealTree │ ├── object-assign@4.1.1
+20 silly idealTree │ ├── once@1.4.0
+20 silly idealTree │ ├── os-homedir@1.0.2
+20 silly idealTree │ ├── os-tmpdir@1.0.2
+20 silly idealTree │ ├── osenv@0.1.5
+20 silly idealTree │ ├── path-is-absolute@1.0.1
+20 silly idealTree │ ├── process-nextick-args@2.0.0
+20 silly idealTree │ ├── rc@1.2.8
+20 silly idealTree │ ├── readable-stream@2.3.6
+20 silly idealTree │ ├── rimraf@2.6.2
+20 silly idealTree │ ├── safe-buffer@5.1.2
+20 silly idealTree │ ├── safer-buffer@2.1.2
+20 silly idealTree │ ├── sax@1.2.4
+20 silly idealTree │ ├── semver@5.5.0
+20 silly idealTree │ ├── set-blocking@2.0.0
+20 silly idealTree │ ├── signal-exit@3.0.2
+20 silly idealTree │ ├── string_decoder@1.1.1
+20 silly idealTree │ ├── string-width@1.0.2
+20 silly idealTree │ ├── strip-ansi@3.0.1
+20 silly idealTree │ ├── strip-json-comments@2.0.1
+20 silly idealTree │ ├── tar@4.4.6
+20 silly idealTree │ ├── util-deprecate@1.0.2
+20 silly idealTree │ ├── wide-align@1.1.3
+20 silly idealTree │ ├── wrappy@1.0.2
+20 silly idealTree │ └── yallist@3.0.2
+20 silly idealTree ├── inflight@1.0.6
+20 silly idealTree ├── inherits@2.0.3
+20 silly idealTree ├── invert-kv@1.0.0
+20 silly idealTree ├── is-fullwidth-code-point@1.0.0
+20 silly idealTree ├── lcid@1.0.0
+20 silly idealTree ├── lodash@4.17.10
+20 silly idealTree ├── long@3.2.0
+20 silly idealTree ├── minimatch@3.0.4
+20 silly idealTree ├── nan@2.11.0
+20 silly idealTree ├── number-is-nan@1.0.1
+20 silly idealTree ├── once@1.4.0
+20 silly idealTree ├── optjs@3.2.2
+20 silly idealTree ├── os-locale@1.4.0
+20 silly idealTree ├── path-is-absolute@1.0.1
+20 silly idealTree ├── protobufjs@5.0.3
+20 silly idealTree ├── string-width@1.0.2
+20 silly idealTree ├── strip-ansi@3.0.1
+20 silly idealTree ├── uuid@3.3.2
+20 silly idealTree ├── window-size@0.1.4
+20 silly idealTree ├── wrap-ansi@2.1.0
+20 silly idealTree ├── wrappy@1.0.2
+20 silly idealTree ├── y18n@3.2.1
+20 silly idealTree └── yargs@3.32.0
+21 silly install generateActionsToTake
+22 timing stage:generateActionsToTake Completed in 21ms
+23 silly diffTrees action count 101
+24 silly diffTrees add ansi-regex@2.1.1
+25 silly diffTrees add balanced-match@1.0.0
+26 silly diffTrees add camelcase@2.1.1
+27 silly diffTrees add code-point-at@1.1.0
+28 silly diffTrees add colour@0.7.1
+29 silly diffTrees add concat-map@0.0.1
+30 silly diffTrees add brace-expansion@1.1.11
+31 silly diffTrees add decamelize@1.2.0
+32 silly diffTrees add fs.realpath@1.0.0
+33 silly diffTrees add abbrev@1.1.1
+34 silly diffTrees add ansi-regex@2.1.1
+35 silly diffTrees add aproba@1.2.0
+36 silly diffTrees add balanced-match@1.0.0
+37 silly diffTrees add chownr@1.0.1
+38 silly diffTrees add code-point-at@1.1.0
+39 silly diffTrees add concat-map@0.0.1
+40 silly diffTrees add brace-expansion@1.1.11
+41 silly diffTrees add console-control-strings@1.1.0
+42 silly diffTrees add core-util-is@1.0.2
+43 silly diffTrees add deep-extend@0.6.0
+44 silly diffTrees add delegates@1.0.0
+45 silly diffTrees add detect-libc@1.0.3
+46 silly diffTrees add fs.realpath@1.0.0
+47 silly diffTrees add has-unicode@2.0.1
+48 silly diffTrees add inherits@2.0.3
+49 silly diffTrees add ini@1.3.5
+50 silly diffTrees add isarray@1.0.0
+51 silly diffTrees add minimatch@3.0.4
+52 silly diffTrees add ignore-walk@3.0.1
+53 silly diffTrees add minimist@1.2.0
+54 silly diffTrees add minimist@0.0.8
+55 silly diffTrees add mkdirp@0.5.1
+56 silly diffTrees add ms@2.0.0
+57 silly diffTrees add debug@2.6.9
+58 silly diffTrees add npm-bundled@1.0.3
+59 silly diffTrees add npm-packlist@1.1.11
+60 silly diffTrees add number-is-nan@1.0.1
+61 silly diffTrees add is-fullwidth-code-point@1.0.0
+62 silly diffTrees add object-assign@4.1.1
+63 silly diffTrees add os-homedir@1.0.2
+64 silly diffTrees add os-tmpdir@1.0.2
+65 silly diffTrees add osenv@0.1.5
+66 silly diffTrees add nopt@4.0.1
+67 silly diffTrees add path-is-absolute@1.0.1
+68 silly diffTrees add process-nextick-args@2.0.0
+69 silly diffTrees add safe-buffer@5.1.2
+70 silly diffTrees add safer-buffer@2.1.2
+71 silly diffTrees add iconv-lite@0.4.23
+72 silly diffTrees add sax@1.2.4
+73 silly diffTrees add needle@2.2.2
+74 silly diffTrees add semver@5.5.0
+75 silly diffTrees add set-blocking@2.0.0
+76 silly diffTrees add signal-exit@3.0.2
+77 silly diffTrees add string_decoder@1.1.1
+78 silly diffTrees add strip-ansi@3.0.1
+79 silly diffTrees add string-width@1.0.2
+80 silly diffTrees add strip-json-comments@2.0.1
+81 silly diffTrees add rc@1.2.8
+82 silly diffTrees add util-deprecate@1.0.2
+83 silly diffTrees add readable-stream@2.3.6
+84 silly diffTrees add are-we-there-yet@1.1.5
+85 silly diffTrees add wide-align@1.1.3
+86 silly diffTrees add gauge@2.7.4
+87 silly diffTrees add npmlog@4.1.2
+88 silly diffTrees add wrappy@1.0.2
+89 silly diffTrees add once@1.4.0
+90 silly diffTrees add inflight@1.0.6
+91 silly diffTrees add glob@7.1.2
+92 silly diffTrees add rimraf@2.6.2
+93 silly diffTrees add yallist@3.0.2
+94 silly diffTrees add minipass@2.3.3
+95 silly diffTrees add fs-minipass@1.2.5
+96 silly diffTrees add minizlib@1.1.0
+97 silly diffTrees add tar@4.4.6
+98 silly diffTrees add node-pre-gyp@0.10.3
+99 silly diffTrees add inherits@2.0.3
+100 silly diffTrees add invert-kv@1.0.0
+101 silly diffTrees add lcid@1.0.0
+102 silly diffTrees add long@3.2.0
+103 silly diffTrees add bytebuffer@5.0.1
+104 silly diffTrees add minimatch@3.0.4
+105 silly diffTrees add nan@2.11.0
+106 silly diffTrees add number-is-nan@1.0.1
+107 silly diffTrees add is-fullwidth-code-point@1.0.0
+108 silly diffTrees add optjs@3.2.2
+109 silly diffTrees add ascli@1.0.1
+110 silly diffTrees add os-locale@1.4.0
+111 silly diffTrees add path-is-absolute@1.0.1
+112 silly diffTrees add strip-ansi@3.0.1
+113 silly diffTrees add string-width@1.0.2
+114 silly diffTrees add window-size@0.1.4
+115 silly diffTrees add wrap-ansi@2.1.0
+116 silly diffTrees add cliui@3.2.0
+117 silly diffTrees add wrappy@1.0.2
+118 silly diffTrees add once@1.4.0
+119 silly diffTrees add inflight@1.0.6
+120 silly diffTrees add glob@7.1.3
+121 silly diffTrees add y18n@3.2.1
+122 silly diffTrees add yargs@3.32.0
+123 silly diffTrees add protobufjs@5.0.3
+124 silly diffTrees add grpc@1.14.1
+125 silly decomposeActions action count 676
+126 silly decomposeActions fetch ansi-regex@2.1.1
+127 silly decomposeActions extract ansi-regex@2.1.1
+128 silly decomposeActions preinstall ansi-regex@2.1.1
+129 silly decomposeActions build ansi-regex@2.1.1
+130 silly decomposeActions install ansi-regex@2.1.1
+131 silly decomposeActions postinstall ansi-regex@2.1.1
+132 silly decomposeActions finalize ansi-regex@2.1.1
+133 silly decomposeActions refresh-package-json ansi-regex@2.1.1
+134 silly decomposeActions fetch balanced-match@1.0.0
+135 silly decomposeActions extract balanced-match@1.0.0
+136 silly decomposeActions preinstall balanced-match@1.0.0
+137 silly decomposeActions build balanced-match@1.0.0
+138 silly decomposeActions install balanced-match@1.0.0
+139 silly decomposeActions postinstall balanced-match@1.0.0
+140 silly decomposeActions finalize balanced-match@1.0.0
+141 silly decomposeActions refresh-package-json balanced-match@1.0.0
+142 silly decomposeActions fetch camelcase@2.1.1
+143 silly decomposeActions extract camelcase@2.1.1
+144 silly decomposeActions preinstall camelcase@2.1.1
+145 silly decomposeActions build camelcase@2.1.1
+146 silly decomposeActions install camelcase@2.1.1
+147 silly decomposeActions postinstall camelcase@2.1.1
+148 silly decomposeActions finalize camelcase@2.1.1
+149 silly decomposeActions refresh-package-json camelcase@2.1.1
+150 silly decomposeActions fetch code-point-at@1.1.0
+151 silly decomposeActions extract code-point-at@1.1.0
+152 silly decomposeActions preinstall code-point-at@1.1.0
+153 silly decomposeActions build code-point-at@1.1.0
+154 silly decomposeActions install code-point-at@1.1.0
+155 silly decomposeActions postinstall code-point-at@1.1.0
+156 silly decomposeActions finalize code-point-at@1.1.0
+157 silly decomposeActions refresh-package-json code-point-at@1.1.0
+158 silly decomposeActions fetch colour@0.7.1
+159 silly decomposeActions extract colour@0.7.1
+160 silly decomposeActions preinstall colour@0.7.1
+161 silly decomposeActions build colour@0.7.1
+162 silly decomposeActions install colour@0.7.1
+163 silly decomposeActions postinstall colour@0.7.1
+164 silly decomposeActions finalize colour@0.7.1
+165 silly decomposeActions refresh-package-json colour@0.7.1
+166 silly decomposeActions fetch concat-map@0.0.1
+167 silly decomposeActions extract concat-map@0.0.1
+168 silly decomposeActions preinstall concat-map@0.0.1
+169 silly decomposeActions build concat-map@0.0.1
+170 silly decomposeActions install concat-map@0.0.1
+171 silly decomposeActions postinstall concat-map@0.0.1
+172 silly decomposeActions finalize concat-map@0.0.1
+173 silly decomposeActions refresh-package-json concat-map@0.0.1
+174 silly decomposeActions fetch brace-expansion@1.1.11
+175 silly decomposeActions extract brace-expansion@1.1.11
+176 silly decomposeActions preinstall brace-expansion@1.1.11
+177 silly decomposeActions build brace-expansion@1.1.11
+178 silly decomposeActions install brace-expansion@1.1.11
+179 silly decomposeActions postinstall brace-expansion@1.1.11
+180 silly decomposeActions finalize brace-expansion@1.1.11
+181 silly decomposeActions refresh-package-json brace-expansion@1.1.11
+182 silly decomposeActions fetch decamelize@1.2.0
+183 silly decomposeActions extract decamelize@1.2.0
+184 silly decomposeActions preinstall decamelize@1.2.0
+185 silly decomposeActions build decamelize@1.2.0
+186 silly decomposeActions install decamelize@1.2.0
+187 silly decomposeActions postinstall decamelize@1.2.0
+188 silly decomposeActions finalize decamelize@1.2.0
+189 silly decomposeActions refresh-package-json decamelize@1.2.0
+190 silly decomposeActions fetch fs.realpath@1.0.0
+191 silly decomposeActions extract fs.realpath@1.0.0
+192 silly decomposeActions preinstall fs.realpath@1.0.0
+193 silly decomposeActions build fs.realpath@1.0.0
+194 silly decomposeActions install fs.realpath@1.0.0
+195 silly decomposeActions postinstall fs.realpath@1.0.0
+196 silly decomposeActions finalize fs.realpath@1.0.0
+197 silly decomposeActions refresh-package-json fs.realpath@1.0.0
+198 silly decomposeActions fetch grpc@1.14.1
+199 silly decomposeActions extract grpc@1.14.1
+200 silly decomposeActions preinstall abbrev@1.1.1
+201 silly decomposeActions build abbrev@1.1.1
+202 silly decomposeActions install abbrev@1.1.1
+203 silly decomposeActions postinstall abbrev@1.1.1
+204 silly decomposeActions finalize abbrev@1.1.1
+205 silly decomposeActions refresh-package-json abbrev@1.1.1
+206 silly decomposeActions preinstall ansi-regex@2.1.1
+207 silly decomposeActions build ansi-regex@2.1.1
+208 silly decomposeActions install ansi-regex@2.1.1
+209 silly decomposeActions postinstall ansi-regex@2.1.1
+210 silly decomposeActions finalize ansi-regex@2.1.1
+211 silly decomposeActions refresh-package-json ansi-regex@2.1.1
+212 silly decomposeActions preinstall aproba@1.2.0
+213 silly decomposeActions build aproba@1.2.0
+214 silly decomposeActions install aproba@1.2.0
+215 silly decomposeActions postinstall aproba@1.2.0
+216 silly decomposeActions finalize aproba@1.2.0
+217 silly decomposeActions refresh-package-json aproba@1.2.0
+218 silly decomposeActions preinstall balanced-match@1.0.0
+219 silly decomposeActions build balanced-match@1.0.0
+220 silly decomposeActions install balanced-match@1.0.0
+221 silly decomposeActions postinstall balanced-match@1.0.0
+222 silly decomposeActions finalize balanced-match@1.0.0
+223 silly decomposeActions refresh-package-json balanced-match@1.0.0
+224 silly decomposeActions preinstall chownr@1.0.1
+225 silly decomposeActions build chownr@1.0.1
+226 silly decomposeActions install chownr@1.0.1
+227 silly decomposeActions postinstall chownr@1.0.1
+228 silly decomposeActions finalize chownr@1.0.1
+229 silly decomposeActions refresh-package-json chownr@1.0.1
+230 silly decomposeActions preinstall code-point-at@1.1.0
+231 silly decomposeActions build code-point-at@1.1.0
+232 silly decomposeActions install code-point-at@1.1.0
+233 silly decomposeActions postinstall code-point-at@1.1.0
+234 silly decomposeActions finalize code-point-at@1.1.0
+235 silly decomposeActions refresh-package-json code-point-at@1.1.0
+236 silly decomposeActions preinstall concat-map@0.0.1
+237 silly decomposeActions build concat-map@0.0.1
+238 silly decomposeActions install concat-map@0.0.1
+239 silly decomposeActions postinstall concat-map@0.0.1
+240 silly decomposeActions finalize concat-map@0.0.1
+241 silly decomposeActions refresh-package-json concat-map@0.0.1
+242 silly decomposeActions preinstall brace-expansion@1.1.11
+243 silly decomposeActions build brace-expansion@1.1.11
+244 silly decomposeActions install brace-expansion@1.1.11
+245 silly decomposeActions postinstall brace-expansion@1.1.11
+246 silly decomposeActions finalize brace-expansion@1.1.11
+247 silly decomposeActions refresh-package-json brace-expansion@1.1.11
+248 silly decomposeActions preinstall console-control-strings@1.1.0
+249 silly decomposeActions build console-control-strings@1.1.0
+250 silly decomposeActions install console-control-strings@1.1.0
+251 silly decomposeActions postinstall console-control-strings@1.1.0
+252 silly decomposeActions finalize console-control-strings@1.1.0
+253 silly decomposeActions refresh-package-json console-control-strings@1.1.0
+254 silly decomposeActions preinstall core-util-is@1.0.2
+255 silly decomposeActions build core-util-is@1.0.2
+256 silly decomposeActions install core-util-is@1.0.2
+257 silly decomposeActions postinstall core-util-is@1.0.2
+258 silly decomposeActions finalize core-util-is@1.0.2
+259 silly decomposeActions refresh-package-json core-util-is@1.0.2
+260 silly decomposeActions preinstall deep-extend@0.6.0
+261 silly decomposeActions build deep-extend@0.6.0
+262 silly decomposeActions install deep-extend@0.6.0
+263 silly decomposeActions postinstall deep-extend@0.6.0
+264 silly decomposeActions finalize deep-extend@0.6.0
+265 silly decomposeActions refresh-package-json deep-extend@0.6.0
+266 silly decomposeActions preinstall delegates@1.0.0
+267 silly decomposeActions build delegates@1.0.0
+268 silly decomposeActions install delegates@1.0.0
+269 silly decomposeActions postinstall delegates@1.0.0
+270 silly decomposeActions finalize delegates@1.0.0
+271 silly decomposeActions refresh-package-json delegates@1.0.0
+272 silly decomposeActions preinstall detect-libc@1.0.3
+273 silly decomposeActions build detect-libc@1.0.3
+274 silly decomposeActions install detect-libc@1.0.3
+275 silly decomposeActions postinstall detect-libc@1.0.3
+276 silly decomposeActions finalize detect-libc@1.0.3
+277 silly decomposeActions refresh-package-json detect-libc@1.0.3
+278 silly decomposeActions preinstall fs.realpath@1.0.0
+279 silly decomposeActions build fs.realpath@1.0.0
+280 silly decomposeActions install fs.realpath@1.0.0
+281 silly decomposeActions postinstall fs.realpath@1.0.0
+282 silly decomposeActions finalize fs.realpath@1.0.0
+283 silly decomposeActions refresh-package-json fs.realpath@1.0.0
+284 silly decomposeActions preinstall has-unicode@2.0.1
+285 silly decomposeActions build has-unicode@2.0.1
+286 silly decomposeActions install has-unicode@2.0.1
+287 silly decomposeActions postinstall has-unicode@2.0.1
+288 silly decomposeActions finalize has-unicode@2.0.1
+289 silly decomposeActions refresh-package-json has-unicode@2.0.1
+290 silly decomposeActions preinstall inherits@2.0.3
+291 silly decomposeActions build inherits@2.0.3
+292 silly decomposeActions install inherits@2.0.3
+293 silly decomposeActions postinstall inherits@2.0.3
+294 silly decomposeActions finalize inherits@2.0.3
+295 silly decomposeActions refresh-package-json inherits@2.0.3
+296 silly decomposeActions preinstall ini@1.3.5
+297 silly decomposeActions build ini@1.3.5
+298 silly decomposeActions install ini@1.3.5
+299 silly decomposeActions postinstall ini@1.3.5
+300 silly decomposeActions finalize ini@1.3.5
+301 silly decomposeActions refresh-package-json ini@1.3.5
+302 silly decomposeActions preinstall isarray@1.0.0
+303 silly decomposeActions build isarray@1.0.0
+304 silly decomposeActions install isarray@1.0.0
+305 silly decomposeActions postinstall isarray@1.0.0
+306 silly decomposeActions finalize isarray@1.0.0
+307 silly decomposeActions refresh-package-json isarray@1.0.0
+308 silly decomposeActions preinstall minimatch@3.0.4
+309 silly decomposeActions build minimatch@3.0.4
+310 silly decomposeActions install minimatch@3.0.4
+311 silly decomposeActions postinstall minimatch@3.0.4
+312 silly decomposeActions finalize minimatch@3.0.4
+313 silly decomposeActions refresh-package-json minimatch@3.0.4
+314 silly decomposeActions preinstall ignore-walk@3.0.1
+315 silly decomposeActions build ignore-walk@3.0.1
+316 silly decomposeActions install ignore-walk@3.0.1
+317 silly decomposeActions postinstall ignore-walk@3.0.1
+318 silly decomposeActions finalize ignore-walk@3.0.1
+319 silly decomposeActions refresh-package-json ignore-walk@3.0.1
+320 silly decomposeActions preinstall minimist@1.2.0
+321 silly decomposeActions build minimist@1.2.0
+322 silly decomposeActions install minimist@1.2.0
+323 silly decomposeActions postinstall minimist@1.2.0
+324 silly decomposeActions finalize minimist@1.2.0
+325 silly decomposeActions refresh-package-json minimist@1.2.0
+326 silly decomposeActions preinstall minimist@0.0.8
+327 silly decomposeActions build minimist@0.0.8
+328 silly decomposeActions install minimist@0.0.8
+329 silly decomposeActions postinstall minimist@0.0.8
+330 silly decomposeActions finalize minimist@0.0.8
+331 silly decomposeActions refresh-package-json minimist@0.0.8
+332 silly decomposeActions preinstall mkdirp@0.5.1
+333 silly decomposeActions build mkdirp@0.5.1
+334 silly decomposeActions install mkdirp@0.5.1
+335 silly decomposeActions postinstall mkdirp@0.5.1
+336 silly decomposeActions finalize mkdirp@0.5.1
+337 silly decomposeActions refresh-package-json mkdirp@0.5.1
+338 silly decomposeActions preinstall ms@2.0.0
+339 silly decomposeActions build ms@2.0.0
+340 silly decomposeActions install ms@2.0.0
+341 silly decomposeActions postinstall ms@2.0.0
+342 silly decomposeActions finalize ms@2.0.0
+343 silly decomposeActions refresh-package-json ms@2.0.0
+344 silly decomposeActions preinstall debug@2.6.9
+345 silly decomposeActions build debug@2.6.9
+346 silly decomposeActions install debug@2.6.9
+347 silly decomposeActions postinstall debug@2.6.9
+348 silly decomposeActions finalize debug@2.6.9
+349 silly decomposeActions refresh-package-json debug@2.6.9
+350 silly decomposeActions preinstall npm-bundled@1.0.3
+351 silly decomposeActions build npm-bundled@1.0.3
+352 silly decomposeActions install npm-bundled@1.0.3
+353 silly decomposeActions postinstall npm-bundled@1.0.3
+354 silly decomposeActions finalize npm-bundled@1.0.3
+355 silly decomposeActions refresh-package-json npm-bundled@1.0.3
+356 silly decomposeActions preinstall npm-packlist@1.1.11
+357 silly decomposeActions build npm-packlist@1.1.11
+358 silly decomposeActions install npm-packlist@1.1.11
+359 silly decomposeActions postinstall npm-packlist@1.1.11
+360 silly decomposeActions finalize npm-packlist@1.1.11
+361 silly decomposeActions refresh-package-json npm-packlist@1.1.11
+362 silly decomposeActions preinstall number-is-nan@1.0.1
+363 silly decomposeActions build number-is-nan@1.0.1
+364 silly decomposeActions install number-is-nan@1.0.1
+365 silly decomposeActions postinstall number-is-nan@1.0.1
+366 silly decomposeActions finalize number-is-nan@1.0.1
+367 silly decomposeActions refresh-package-json number-is-nan@1.0.1
+368 silly decomposeActions preinstall is-fullwidth-code-point@1.0.0
+369 silly decomposeActions build is-fullwidth-code-point@1.0.0
+370 silly decomposeActions install is-fullwidth-code-point@1.0.0
+371 silly decomposeActions postinstall is-fullwidth-code-point@1.0.0
+372 silly decomposeActions finalize is-fullwidth-code-point@1.0.0
+373 silly decomposeActions refresh-package-json is-fullwidth-code-point@1.0.0
+374 silly decomposeActions preinstall object-assign@4.1.1
+375 silly decomposeActions build object-assign@4.1.1
+376 silly decomposeActions install object-assign@4.1.1
+377 silly decomposeActions postinstall object-assign@4.1.1
+378 silly decomposeActions finalize object-assign@4.1.1
+379 silly decomposeActions refresh-package-json object-assign@4.1.1
+380 silly decomposeActions preinstall os-homedir@1.0.2
+381 silly decomposeActions build os-homedir@1.0.2
+382 silly decomposeActions install os-homedir@1.0.2
+383 silly decomposeActions postinstall os-homedir@1.0.2
+384 silly decomposeActions finalize os-homedir@1.0.2
+385 silly decomposeActions refresh-package-json os-homedir@1.0.2
+386 silly decomposeActions preinstall os-tmpdir@1.0.2
+387 silly decomposeActions build os-tmpdir@1.0.2
+388 silly decomposeActions install os-tmpdir@1.0.2
+389 silly decomposeActions postinstall os-tmpdir@1.0.2
+390 silly decomposeActions finalize os-tmpdir@1.0.2
+391 silly decomposeActions refresh-package-json os-tmpdir@1.0.2
+392 silly decomposeActions preinstall osenv@0.1.5
+393 silly decomposeActions build osenv@0.1.5
+394 silly decomposeActions install osenv@0.1.5
+395 silly decomposeActions postinstall osenv@0.1.5
+396 silly decomposeActions finalize osenv@0.1.5
+397 silly decomposeActions refresh-package-json osenv@0.1.5
+398 silly decomposeActions preinstall nopt@4.0.1
+399 silly decomposeActions build nopt@4.0.1
+400 silly decomposeActions install nopt@4.0.1
+401 silly decomposeActions postinstall nopt@4.0.1
+402 silly decomposeActions finalize nopt@4.0.1
+403 silly decomposeActions refresh-package-json nopt@4.0.1
+404 silly decomposeActions preinstall path-is-absolute@1.0.1
+405 silly decomposeActions build path-is-absolute@1.0.1
+406 silly decomposeActions install path-is-absolute@1.0.1
+407 silly decomposeActions postinstall path-is-absolute@1.0.1
+408 silly decomposeActions finalize path-is-absolute@1.0.1
+409 silly decomposeActions refresh-package-json path-is-absolute@1.0.1
+410 silly decomposeActions preinstall process-nextick-args@2.0.0
+411 silly decomposeActions build process-nextick-args@2.0.0
+412 silly decomposeActions install process-nextick-args@2.0.0
+413 silly decomposeActions postinstall process-nextick-args@2.0.0
+414 silly decomposeActions finalize process-nextick-args@2.0.0
+415 silly decomposeActions refresh-package-json process-nextick-args@2.0.0
+416 silly decomposeActions preinstall safe-buffer@5.1.2
+417 silly decomposeActions build safe-buffer@5.1.2
+418 silly decomposeActions install safe-buffer@5.1.2
+419 silly decomposeActions postinstall safe-buffer@5.1.2
+420 silly decomposeActions finalize safe-buffer@5.1.2
+421 silly decomposeActions refresh-package-json safe-buffer@5.1.2
+422 silly decomposeActions preinstall safer-buffer@2.1.2
+423 silly decomposeActions build safer-buffer@2.1.2
+424 silly decomposeActions install safer-buffer@2.1.2
+425 silly decomposeActions postinstall safer-buffer@2.1.2
+426 silly decomposeActions finalize safer-buffer@2.1.2
+427 silly decomposeActions refresh-package-json safer-buffer@2.1.2
+428 silly decomposeActions preinstall iconv-lite@0.4.23
+429 silly decomposeActions build iconv-lite@0.4.23
+430 silly decomposeActions install iconv-lite@0.4.23
+431 silly decomposeActions postinstall iconv-lite@0.4.23
+432 silly decomposeActions finalize iconv-lite@0.4.23
+433 silly decomposeActions refresh-package-json iconv-lite@0.4.23
+434 silly decomposeActions preinstall sax@1.2.4
+435 silly decomposeActions build sax@1.2.4
+436 silly decomposeActions install sax@1.2.4
+437 silly decomposeActions postinstall sax@1.2.4
+438 silly decomposeActions finalize sax@1.2.4
+439 silly decomposeActions refresh-package-json sax@1.2.4
+440 silly decomposeActions preinstall needle@2.2.2
+441 silly decomposeActions build needle@2.2.2
+442 silly decomposeActions install needle@2.2.2
+443 silly decomposeActions postinstall needle@2.2.2
+444 silly decomposeActions finalize needle@2.2.2
+445 silly decomposeActions refresh-package-json needle@2.2.2
+446 silly decomposeActions preinstall semver@5.5.0
+447 silly decomposeActions build semver@5.5.0
+448 silly decomposeActions install semver@5.5.0
+449 silly decomposeActions postinstall semver@5.5.0
+450 silly decomposeActions finalize semver@5.5.0
+451 silly decomposeActions refresh-package-json semver@5.5.0
+452 silly decomposeActions preinstall set-blocking@2.0.0
+453 silly decomposeActions build set-blocking@2.0.0
+454 silly decomposeActions install set-blocking@2.0.0
+455 silly decomposeActions postinstall set-blocking@2.0.0
+456 silly decomposeActions finalize set-blocking@2.0.0
+457 silly decomposeActions refresh-package-json set-blocking@2.0.0
+458 silly decomposeActions preinstall signal-exit@3.0.2
+459 silly decomposeActions build signal-exit@3.0.2
+460 silly decomposeActions install signal-exit@3.0.2
+461 silly decomposeActions postinstall signal-exit@3.0.2
+462 silly decomposeActions finalize signal-exit@3.0.2
+463 silly decomposeActions refresh-package-json signal-exit@3.0.2
+464 silly decomposeActions preinstall string_decoder@1.1.1
+465 silly decomposeActions build string_decoder@1.1.1
+466 silly decomposeActions install string_decoder@1.1.1
+467 silly decomposeActions postinstall string_decoder@1.1.1
+468 silly decomposeActions finalize string_decoder@1.1.1
+469 silly decomposeActions refresh-package-json string_decoder@1.1.1
+470 silly decomposeActions preinstall strip-ansi@3.0.1
+471 silly decomposeActions build strip-ansi@3.0.1
+472 silly decomposeActions install strip-ansi@3.0.1
+473 silly decomposeActions postinstall strip-ansi@3.0.1
+474 silly decomposeActions finalize strip-ansi@3.0.1
+475 silly decomposeActions refresh-package-json strip-ansi@3.0.1
+476 silly decomposeActions preinstall string-width@1.0.2
+477 silly decomposeActions build string-width@1.0.2
+478 silly decomposeActions install string-width@1.0.2
+479 silly decomposeActions postinstall string-width@1.0.2
+480 silly decomposeActions finalize string-width@1.0.2
+481 silly decomposeActions refresh-package-json string-width@1.0.2
+482 silly decomposeActions preinstall strip-json-comments@2.0.1
+483 silly decomposeActions build strip-json-comments@2.0.1
+484 silly decomposeActions install strip-json-comments@2.0.1
+485 silly decomposeActions postinstall strip-json-comments@2.0.1
+486 silly decomposeActions finalize strip-json-comments@2.0.1
+487 silly decomposeActions refresh-package-json strip-json-comments@2.0.1
+488 silly decomposeActions preinstall rc@1.2.8
+489 silly decomposeActions build rc@1.2.8
+490 silly decomposeActions install rc@1.2.8
+491 silly decomposeActions postinstall rc@1.2.8
+492 silly decomposeActions finalize rc@1.2.8
+493 silly decomposeActions refresh-package-json rc@1.2.8
+494 silly decomposeActions preinstall util-deprecate@1.0.2
+495 silly decomposeActions build util-deprecate@1.0.2
+496 silly decomposeActions install util-deprecate@1.0.2
+497 silly decomposeActions postinstall util-deprecate@1.0.2
+498 silly decomposeActions finalize util-deprecate@1.0.2
+499 silly decomposeActions refresh-package-json util-deprecate@1.0.2
+500 silly decomposeActions preinstall readable-stream@2.3.6
+501 silly decomposeActions build readable-stream@2.3.6
+502 silly decomposeActions install readable-stream@2.3.6
+503 silly decomposeActions postinstall readable-stream@2.3.6
+504 silly decomposeActions finalize readable-stream@2.3.6
+505 silly decomposeActions refresh-package-json readable-stream@2.3.6
+506 silly decomposeActions preinstall are-we-there-yet@1.1.5
+507 silly decomposeActions build are-we-there-yet@1.1.5
+508 silly decomposeActions install are-we-there-yet@1.1.5
+509 silly decomposeActions postinstall are-we-there-yet@1.1.5
+510 silly decomposeActions finalize are-we-there-yet@1.1.5
+511 silly decomposeActions refresh-package-json are-we-there-yet@1.1.5
+512 silly decomposeActions preinstall wide-align@1.1.3
+513 silly decomposeActions build wide-align@1.1.3
+514 silly decomposeActions install wide-align@1.1.3
+515 silly decomposeActions postinstall wide-align@1.1.3
+516 silly decomposeActions finalize wide-align@1.1.3
+517 silly decomposeActions refresh-package-json wide-align@1.1.3
+518 silly decomposeActions preinstall gauge@2.7.4
+519 silly decomposeActions build gauge@2.7.4
+520 silly decomposeActions install gauge@2.7.4
+521 silly decomposeActions postinstall gauge@2.7.4
+522 silly decomposeActions finalize gauge@2.7.4
+523 silly decomposeActions refresh-package-json gauge@2.7.4
+524 silly decomposeActions preinstall npmlog@4.1.2
+525 silly decomposeActions build npmlog@4.1.2
+526 silly decomposeActions install npmlog@4.1.2
+527 silly decomposeActions postinstall npmlog@4.1.2
+528 silly decomposeActions finalize npmlog@4.1.2
+529 silly decomposeActions refresh-package-json npmlog@4.1.2
+530 silly decomposeActions preinstall wrappy@1.0.2
+531 silly decomposeActions build wrappy@1.0.2
+532 silly decomposeActions install wrappy@1.0.2
+533 silly decomposeActions postinstall wrappy@1.0.2
+534 silly decomposeActions finalize wrappy@1.0.2
+535 silly decomposeActions refresh-package-json wrappy@1.0.2
+536 silly decomposeActions preinstall once@1.4.0
+537 silly decomposeActions build once@1.4.0
+538 silly decomposeActions install once@1.4.0
+539 silly decomposeActions postinstall once@1.4.0
+540 silly decomposeActions finalize once@1.4.0
+541 silly decomposeActions refresh-package-json once@1.4.0
+542 silly decomposeActions preinstall inflight@1.0.6
+543 silly decomposeActions build inflight@1.0.6
+544 silly decomposeActions install inflight@1.0.6
+545 silly decomposeActions postinstall inflight@1.0.6
+546 silly decomposeActions finalize inflight@1.0.6
+547 silly decomposeActions refresh-package-json inflight@1.0.6
+548 silly decomposeActions preinstall glob@7.1.2
+549 silly decomposeActions build glob@7.1.2
+550 silly decomposeActions install glob@7.1.2
+551 silly decomposeActions postinstall glob@7.1.2
+552 silly decomposeActions finalize glob@7.1.2
+553 silly decomposeActions refresh-package-json glob@7.1.2
+554 silly decomposeActions preinstall rimraf@2.6.2
+555 silly decomposeActions build rimraf@2.6.2
+556 silly decomposeActions install rimraf@2.6.2
+557 silly decomposeActions postinstall rimraf@2.6.2
+558 silly decomposeActions finalize rimraf@2.6.2
+559 silly decomposeActions refresh-package-json rimraf@2.6.2
+560 silly decomposeActions preinstall yallist@3.0.2
+561 silly decomposeActions build yallist@3.0.2
+562 silly decomposeActions install yallist@3.0.2
+563 silly decomposeActions postinstall yallist@3.0.2
+564 silly decomposeActions finalize yallist@3.0.2
+565 silly decomposeActions refresh-package-json yallist@3.0.2
+566 silly decomposeActions preinstall minipass@2.3.3
+567 silly decomposeActions build minipass@2.3.3
+568 silly decomposeActions install minipass@2.3.3
+569 silly decomposeActions postinstall minipass@2.3.3
+570 silly decomposeActions finalize minipass@2.3.3
+571 silly decomposeActions refresh-package-json minipass@2.3.3
+572 silly decomposeActions preinstall fs-minipass@1.2.5
+573 silly decomposeActions build fs-minipass@1.2.5
+574 silly decomposeActions install fs-minipass@1.2.5
+575 silly decomposeActions postinstall fs-minipass@1.2.5
+576 silly decomposeActions finalize fs-minipass@1.2.5
+577 silly decomposeActions refresh-package-json fs-minipass@1.2.5
+578 silly decomposeActions preinstall minizlib@1.1.0
+579 silly decomposeActions build minizlib@1.1.0
+580 silly decomposeActions install minizlib@1.1.0
+581 silly decomposeActions postinstall minizlib@1.1.0
+582 silly decomposeActions finalize minizlib@1.1.0
+583 silly decomposeActions refresh-package-json minizlib@1.1.0
+584 silly decomposeActions preinstall tar@4.4.6
+585 silly decomposeActions build tar@4.4.6
+586 silly decomposeActions install tar@4.4.6
+587 silly decomposeActions postinstall tar@4.4.6
+588 silly decomposeActions finalize tar@4.4.6
+589 silly decomposeActions refresh-package-json tar@4.4.6
+590 silly decomposeActions preinstall node-pre-gyp@0.10.3
+591 silly decomposeActions build node-pre-gyp@0.10.3
+592 silly decomposeActions install node-pre-gyp@0.10.3
+593 silly decomposeActions postinstall node-pre-gyp@0.10.3
+594 silly decomposeActions finalize node-pre-gyp@0.10.3
+595 silly decomposeActions refresh-package-json node-pre-gyp@0.10.3
+596 silly decomposeActions fetch inherits@2.0.3
+597 silly decomposeActions extract inherits@2.0.3
+598 silly decomposeActions preinstall inherits@2.0.3
+599 silly decomposeActions build inherits@2.0.3
+600 silly decomposeActions install inherits@2.0.3
+601 silly decomposeActions postinstall inherits@2.0.3
+602 silly decomposeActions finalize inherits@2.0.3
+603 silly decomposeActions refresh-package-json inherits@2.0.3
+604 silly decomposeActions fetch invert-kv@1.0.0
+605 silly decomposeActions extract invert-kv@1.0.0
+606 silly decomposeActions preinstall invert-kv@1.0.0
+607 silly decomposeActions build invert-kv@1.0.0
+608 silly decomposeActions install invert-kv@1.0.0
+609 silly decomposeActions postinstall invert-kv@1.0.0
+610 silly decomposeActions finalize invert-kv@1.0.0
+611 silly decomposeActions refresh-package-json invert-kv@1.0.0
+612 silly decomposeActions fetch lcid@1.0.0
+613 silly decomposeActions extract lcid@1.0.0
+614 silly decomposeActions preinstall lcid@1.0.0
+615 silly decomposeActions build lcid@1.0.0
+616 silly decomposeActions install lcid@1.0.0
+617 silly decomposeActions postinstall lcid@1.0.0
+618 silly decomposeActions finalize lcid@1.0.0
+619 silly decomposeActions refresh-package-json lcid@1.0.0
+620 silly decomposeActions fetch long@3.2.0
+621 silly decomposeActions extract long@3.2.0
+622 silly decomposeActions preinstall long@3.2.0
+623 silly decomposeActions build long@3.2.0
+624 silly decomposeActions install long@3.2.0
+625 silly decomposeActions postinstall long@3.2.0
+626 silly decomposeActions finalize long@3.2.0
+627 silly decomposeActions refresh-package-json long@3.2.0
+628 silly decomposeActions fetch bytebuffer@5.0.1
+629 silly decomposeActions extract bytebuffer@5.0.1
+630 silly decomposeActions preinstall bytebuffer@5.0.1
+631 silly decomposeActions build bytebuffer@5.0.1
+632 silly decomposeActions install bytebuffer@5.0.1
+633 silly decomposeActions postinstall bytebuffer@5.0.1
+634 silly decomposeActions finalize bytebuffer@5.0.1
+635 silly decomposeActions refresh-package-json bytebuffer@5.0.1
+636 silly decomposeActions fetch minimatch@3.0.4
+637 silly decomposeActions extract minimatch@3.0.4
+638 silly decomposeActions preinstall minimatch@3.0.4
+639 silly decomposeActions build minimatch@3.0.4
+640 silly decomposeActions install minimatch@3.0.4
+641 silly decomposeActions postinstall minimatch@3.0.4
+642 silly decomposeActions finalize minimatch@3.0.4
+643 silly decomposeActions refresh-package-json minimatch@3.0.4
+644 silly decomposeActions fetch nan@2.11.0
+645 silly decomposeActions extract nan@2.11.0
+646 silly decomposeActions preinstall nan@2.11.0
+647 silly decomposeActions build nan@2.11.0
+648 silly decomposeActions install nan@2.11.0
+649 silly decomposeActions postinstall nan@2.11.0
+650 silly decomposeActions finalize nan@2.11.0
+651 silly decomposeActions refresh-package-json nan@2.11.0
+652 silly decomposeActions fetch number-is-nan@1.0.1
+653 silly decomposeActions extract number-is-nan@1.0.1
+654 silly decomposeActions preinstall number-is-nan@1.0.1
+655 silly decomposeActions build number-is-nan@1.0.1
+656 silly decomposeActions install number-is-nan@1.0.1
+657 silly decomposeActions postinstall number-is-nan@1.0.1
+658 silly decomposeActions finalize number-is-nan@1.0.1
+659 silly decomposeActions refresh-package-json number-is-nan@1.0.1
+660 silly decomposeActions fetch is-fullwidth-code-point@1.0.0
+661 silly decomposeActions extract is-fullwidth-code-point@1.0.0
+662 silly decomposeActions preinstall is-fullwidth-code-point@1.0.0
+663 silly decomposeActions build is-fullwidth-code-point@1.0.0
+664 silly decomposeActions install is-fullwidth-code-point@1.0.0
+665 silly decomposeActions postinstall is-fullwidth-code-point@1.0.0
+666 silly decomposeActions finalize is-fullwidth-code-point@1.0.0
+667 silly decomposeActions refresh-package-json is-fullwidth-code-point@1.0.0
+668 silly decomposeActions fetch optjs@3.2.2
+669 silly decomposeActions extract optjs@3.2.2
+670 silly decomposeActions preinstall optjs@3.2.2
+671 silly decomposeActions build optjs@3.2.2
+672 silly decomposeActions install optjs@3.2.2
+673 silly decomposeActions postinstall optjs@3.2.2
+674 silly decomposeActions finalize optjs@3.2.2
+675 silly decomposeActions refresh-package-json optjs@3.2.2
+676 silly decomposeActions fetch ascli@1.0.1
+677 silly decomposeActions extract ascli@1.0.1
+678 silly decomposeActions preinstall ascli@1.0.1
+679 silly decomposeActions build ascli@1.0.1
+680 silly decomposeActions install ascli@1.0.1
+681 silly decomposeActions postinstall ascli@1.0.1
+682 silly decomposeActions finalize ascli@1.0.1
+683 silly decomposeActions refresh-package-json ascli@1.0.1
+684 silly decomposeActions fetch os-locale@1.4.0
+685 silly decomposeActions extract os-locale@1.4.0
+686 silly decomposeActions preinstall os-locale@1.4.0
+687 silly decomposeActions build os-locale@1.4.0
+688 silly decomposeActions install os-locale@1.4.0
+689 silly decomposeActions postinstall os-locale@1.4.0
+690 silly decomposeActions finalize os-locale@1.4.0
+691 silly decomposeActions refresh-package-json os-locale@1.4.0
+692 silly decomposeActions fetch path-is-absolute@1.0.1
+693 silly decomposeActions extract path-is-absolute@1.0.1
+694 silly decomposeActions preinstall path-is-absolute@1.0.1
+695 silly decomposeActions build path-is-absolute@1.0.1
+696 silly decomposeActions install path-is-absolute@1.0.1
+697 silly decomposeActions postinstall path-is-absolute@1.0.1
+698 silly decomposeActions finalize path-is-absolute@1.0.1
+699 silly decomposeActions refresh-package-json path-is-absolute@1.0.1
+700 silly decomposeActions fetch strip-ansi@3.0.1
+701 silly decomposeActions extract strip-ansi@3.0.1
+702 silly decomposeActions preinstall strip-ansi@3.0.1
+703 silly decomposeActions build strip-ansi@3.0.1
+704 silly decomposeActions install strip-ansi@3.0.1
+705 silly decomposeActions postinstall strip-ansi@3.0.1
+706 silly decomposeActions finalize strip-ansi@3.0.1
+707 silly decomposeActions refresh-package-json strip-ansi@3.0.1
+708 silly decomposeActions fetch string-width@1.0.2
+709 silly decomposeActions extract string-width@1.0.2
+710 silly decomposeActions preinstall string-width@1.0.2
+711 silly decomposeActions build string-width@1.0.2
+712 silly decomposeActions install string-width@1.0.2
+713 silly decomposeActions postinstall string-width@1.0.2
+714 silly decomposeActions finalize string-width@1.0.2
+715 silly decomposeActions refresh-package-json string-width@1.0.2
+716 silly decomposeActions fetch window-size@0.1.4
+717 silly decomposeActions extract window-size@0.1.4
+718 silly decomposeActions preinstall window-size@0.1.4
+719 silly decomposeActions build window-size@0.1.4
+720 silly decomposeActions install window-size@0.1.4
+721 silly decomposeActions postinstall window-size@0.1.4
+722 silly decomposeActions finalize window-size@0.1.4
+723 silly decomposeActions refresh-package-json window-size@0.1.4
+724 silly decomposeActions fetch wrap-ansi@2.1.0
+725 silly decomposeActions extract wrap-ansi@2.1.0
+726 silly decomposeActions preinstall wrap-ansi@2.1.0
+727 silly decomposeActions build wrap-ansi@2.1.0
+728 silly decomposeActions install wrap-ansi@2.1.0
+729 silly decomposeActions postinstall wrap-ansi@2.1.0
+730 silly decomposeActions finalize wrap-ansi@2.1.0
+731 silly decomposeActions refresh-package-json wrap-ansi@2.1.0
+732 silly decomposeActions fetch cliui@3.2.0
+733 silly decomposeActions extract cliui@3.2.0
+734 silly decomposeActions preinstall cliui@3.2.0
+735 silly decomposeActions build cliui@3.2.0
+736 silly decomposeActions install cliui@3.2.0
+737 silly decomposeActions postinstall cliui@3.2.0
+738 silly decomposeActions finalize cliui@3.2.0
+739 silly decomposeActions refresh-package-json cliui@3.2.0
+740 silly decomposeActions fetch wrappy@1.0.2
+741 silly decomposeActions extract wrappy@1.0.2
+742 silly decomposeActions preinstall wrappy@1.0.2
+743 silly decomposeActions build wrappy@1.0.2
+744 silly decomposeActions install wrappy@1.0.2
+745 silly decomposeActions postinstall wrappy@1.0.2
+746 silly decomposeActions finalize wrappy@1.0.2
+747 silly decomposeActions refresh-package-json wrappy@1.0.2
+748 silly decomposeActions fetch once@1.4.0
+749 silly decomposeActions extract once@1.4.0
+750 silly decomposeActions preinstall once@1.4.0
+751 silly decomposeActions build once@1.4.0
+752 silly decomposeActions install once@1.4.0
+753 silly decomposeActions postinstall once@1.4.0
+754 silly decomposeActions finalize once@1.4.0
+755 silly decomposeActions refresh-package-json once@1.4.0
+756 silly decomposeActions fetch inflight@1.0.6
+757 silly decomposeActions extract inflight@1.0.6
+758 silly decomposeActions preinstall inflight@1.0.6
+759 silly decomposeActions build inflight@1.0.6
+760 silly decomposeActions install inflight@1.0.6
+761 silly decomposeActions postinstall inflight@1.0.6
+762 silly decomposeActions finalize inflight@1.0.6
+763 silly decomposeActions refresh-package-json inflight@1.0.6
+764 silly decomposeActions fetch glob@7.1.3
+765 silly decomposeActions extract glob@7.1.3
+766 silly decomposeActions preinstall glob@7.1.3
+767 silly decomposeActions build glob@7.1.3
+768 silly decomposeActions install glob@7.1.3
+769 silly decomposeActions postinstall glob@7.1.3
+770 silly decomposeActions finalize glob@7.1.3
+771 silly decomposeActions refresh-package-json glob@7.1.3
+772 silly decomposeActions fetch y18n@3.2.1
+773 silly decomposeActions extract y18n@3.2.1
+774 silly decomposeActions preinstall y18n@3.2.1
+775 silly decomposeActions build y18n@3.2.1
+776 silly decomposeActions install y18n@3.2.1
+777 silly decomposeActions postinstall y18n@3.2.1
+778 silly decomposeActions finalize y18n@3.2.1
+779 silly decomposeActions refresh-package-json y18n@3.2.1
+780 silly decomposeActions fetch yargs@3.32.0
+781 silly decomposeActions extract yargs@3.32.0
+782 silly decomposeActions preinstall yargs@3.32.0
+783 silly decomposeActions build yargs@3.32.0
+784 silly decomposeActions install yargs@3.32.0
+785 silly decomposeActions postinstall yargs@3.32.0
+786 silly decomposeActions finalize yargs@3.32.0
+787 silly decomposeActions refresh-package-json yargs@3.32.0
+788 silly decomposeActions fetch protobufjs@5.0.3
+789 silly decomposeActions extract protobufjs@5.0.3
+790 silly decomposeActions preinstall protobufjs@5.0.3
+791 silly decomposeActions build protobufjs@5.0.3
+792 silly decomposeActions install protobufjs@5.0.3
+793 silly decomposeActions postinstall protobufjs@5.0.3
+794 silly decomposeActions finalize protobufjs@5.0.3
+795 silly decomposeActions refresh-package-json protobufjs@5.0.3
+796 silly decomposeActions preinstall grpc@1.14.1
+797 silly decomposeActions build grpc@1.14.1
+798 silly decomposeActions install grpc@1.14.1
+799 silly decomposeActions postinstall grpc@1.14.1
+800 silly decomposeActions finalize grpc@1.14.1
+801 silly decomposeActions refresh-package-json grpc@1.14.1
+802 silly install executeActions
+803 silly doSerial global-install 676
+804 verbose correctMkdir /Users/abduldiallo/.npm/_locks correctMkdir not in flight; initializing
+805 verbose lock using /Users/abduldiallo/.npm/_locks/staging-aab2753c240574c5.lock for /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging
+806 silly doParallel extract 35
+807 silly extract ansi-regex@2.1.1
+808 silly extract balanced-match@1.0.0
+809 silly extract camelcase@2.1.1
+810 silly extract code-point-at@1.1.0
+811 silly extract colour@0.7.1
+812 silly extract concat-map@0.0.1
+813 silly extract brace-expansion@1.1.11
+814 silly extract decamelize@1.2.0
+815 silly extract fs.realpath@1.0.0
+816 silly extract grpc@1.14.1
+817 silly extract inherits@2.0.3
+818 silly extract invert-kv@1.0.0
+819 silly extract lcid@1.0.0
+820 silly extract long@3.2.0
+821 silly extract bytebuffer@5.0.1
+822 silly extract minimatch@3.0.4
+823 silly extract nan@2.11.0
+824 silly extract number-is-nan@1.0.1
+825 silly extract is-fullwidth-code-point@1.0.0
+826 silly extract optjs@3.2.2
+827 silly extract ascli@1.0.1
+828 silly extract os-locale@1.4.0
+829 silly extract path-is-absolute@1.0.1
+830 silly extract strip-ansi@3.0.1
+831 silly extract string-width@1.0.2
+832 silly extract window-size@0.1.4
+833 silly extract wrap-ansi@2.1.0
+834 silly extract cliui@3.2.0
+835 silly extract wrappy@1.0.2
+836 silly extract once@1.4.0
+837 silly extract inflight@1.0.6
+838 silly extract glob@7.1.3
+839 silly extract y18n@3.2.1
+840 silly extract yargs@3.32.0
+841 silly extract protobufjs@5.0.3
+842 silly tarball trying ansi-regex@2.1.1 by hash: sha1-w7M6te42DYbg5ijwRorn7yfWVN8=
+843 silly tarball trying balanced-match@1.0.0 by hash: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
+844 silly tarball trying camelcase@2.1.1 by hash: sha1-fB0W1nmhu+WcoCys7PsBHiAfWh8=
+845 silly tarball trying code-point-at@1.1.0 by hash: sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
+846 silly tarball trying colour@0.7.1 by hash: sha1-nLFpkX7F0SwHNtPoaFdG3xyt93g=
+847 silly tarball trying concat-map@0.0.1 by hash: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+848 silly tarball trying brace-expansion@1.1.11 by hash: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
+849 silly tarball trying decamelize@1.2.0 by hash: sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
+850 silly tarball trying fs.realpath@1.0.0 by hash: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
+851 silly tarball trying grpc@1.14.1 by hash: sha512-UQA+WSa6CJYKv8rWAHX2RXCKhcxbB/5kyVnkiK3U+dPm4PlfZT4PrEeEdt2uzmvMhp9PB0SVKpVAukng1By+7w==
+852 silly tarball trying inherits@2.0.3 by hash: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+853 silly tarball trying invert-kv@1.0.0 by hash: sha1-EEqOSqym09jNFXqO+L+rLXo//bY=
+854 silly tarball trying lcid@1.0.0 by hash: sha1-MIrMr6C8SDo4Z7S28rlQYlHRuDU=
+855 silly tarball trying long@3.2.0 by hash: sha1-2CG3E4yhy1gcFymQ7xTbIAtcR0s=
+856 silly tarball trying bytebuffer@5.0.1 by hash: sha1-WC7qSxqHO20CCkjVjfhfC7ps/d0=
+857 silly tarball trying minimatch@3.0.4 by hash: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
+858 silly tarball trying nan@2.11.0 by hash: sha512-F4miItu2rGnV2ySkXOQoA8FKz/SR2Q2sWP0sbTxNxz/tuokeC8WxOhPMcwi0qIyGtVn/rrSeLbvVkznqCdwYnw==
+859 silly tarball trying number-is-nan@1.0.1 by hash: sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
+860 silly tarball trying is-fullwidth-code-point@1.0.0 by hash: sha1-754xOG8DGn8NZDr4L95QxFfvAMs=
+861 silly tarball trying optjs@3.2.2 by hash: sha1-aabOicRCpEQDFBrS+bNwvVu29O4=
+862 silly tarball trying ascli@1.0.1 by hash: sha1-vPpZdKYvGOgcq660lzKrSoj5Brw=
+863 silly tarball trying os-locale@1.4.0 by hash: sha1-IPnxeuKe00XoveWDsT0gCYA8FNk=
+864 silly tarball trying path-is-absolute@1.0.1 by hash: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
+865 silly tarball trying strip-ansi@3.0.1 by hash: sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=
+866 silly tarball trying string-width@1.0.2 by hash: sha1-EYvfW4zcUaKn5w0hHgfisLmxB9M=
+867 silly tarball trying window-size@0.1.4 by hash: sha1-+OGqHuWlPsW/FR/6CXQqatdpeHY=
+868 silly tarball trying wrap-ansi@2.1.0 by hash: sha1-2Pw9KE3QV5T+hJc8rs3Rz4JP3YU=
+869 silly tarball trying cliui@3.2.0 by hash: sha1-EgYBU3qRbSmUD5NNo7SNWFo5IT0=
+870 silly tarball trying wrappy@1.0.2 by hash: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+871 silly tarball trying once@1.4.0 by hash: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
+872 silly tarball trying inflight@1.0.6 by hash: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=
+873 silly tarball trying glob@7.1.3 by hash: sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==
+874 silly tarball trying y18n@3.2.1 by hash: sha1-bRX7qITAhnnA136I53WegR4H+kE=
+875 silly tarball trying yargs@3.32.0 by hash: sha1-AwiOnr+edWtpdRYR0qXvWRSCyZU=
+876 silly tarball trying protobufjs@5.0.3 by hash: sha512-55Kcx1MhPZX0zTbVosMQEO5R6/rikNXd9b6RQK4KSPcrSIIwoXTtebIczUrXlwaSrbz4x8XUVThGPob1n8I4QA==
+877 silly extract ansi-regex@2.1.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/ansi-regex-fb98d50a (178ms)
+878 silly extract invert-kv@1.0.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/invert-kv-ac671b12 (176ms)
+879 silly extract camelcase@2.1.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/camelcase-9f0bf04c (181ms)
+880 silly extract code-point-at@1.1.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/code-point-at-e3b9b7d8 (181ms)
+881 silly extract brace-expansion@1.1.11 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/brace-expansion-5d72f4cb (180ms)
+882 silly extract decamelize@1.2.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/decamelize-069e0974 (180ms)
+883 silly extract number-is-nan@1.0.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/number-is-nan-6044502e (178ms)
+884 silly extract is-fullwidth-code-point@1.0.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/is-fullwidth-code-point-2d39fab0 (178ms)
+885 silly extract os-locale@1.4.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/os-locale-aa4290ff (178ms)
+886 silly extract path-is-absolute@1.0.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/path-is-absolute-43620968 (178ms)
+887 silly extract strip-ansi@3.0.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/strip-ansi-86e397be (180ms)
+888 silly extract string-width@1.0.2 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/string-width-89034030 (180ms)
+889 silly extract wrap-ansi@2.1.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/wrap-ansi-ced007f2 (180ms)
+890 silly extract wrappy@1.0.2 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/wrappy-281aee8b (180ms)
+891 silly extract once@1.4.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/once-5b6a8968 (180ms)
+892 silly extract inflight@1.0.6 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/inflight-b72485c8 (180ms)
+893 silly extract y18n@3.2.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/y18n-7b3e8a37 (179ms)
+894 silly extract balanced-match@1.0.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/balanced-match-bc285f54 (184ms)
+895 silly extract inherits@2.0.3 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/inherits-b11dc17e (182ms)
+896 silly extract lcid@1.0.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/lcid-f20b4e9d (182ms)
+897 silly extract optjs@3.2.2 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/optjs-1d04c0a7 (181ms)
+898 silly extract cliui@3.2.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/cliui-6aef653b (182ms)
+899 silly extract window-size@0.1.4 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/window-size-ed55f806 (182ms)
+900 silly extract fs.realpath@1.0.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/fs.realpath-4a4a8bbe (185ms)
+901 silly extract minimatch@3.0.4 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/minimatch-72dd022a (184ms)
+902 silly extract concat-map@0.0.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/concat-map-d7327c56 (189ms)
+903 silly extract glob@7.1.3 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/glob-1cdf0e9d (186ms)
+904 silly extract ascli@1.0.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/ascli-932293f7 (188ms)
+905 silly extract colour@0.7.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/colour-f4c8e78b (202ms)
+906 silly extract yargs@3.32.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/yargs-c2b5f7f0 (217ms)
+907 silly extract long@3.2.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/long-52505809 (220ms)
+908 silly extract nan@2.11.0 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/nan-a00010e2 (251ms)
+909 silly extract bytebuffer@5.0.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/bytebuffer-8449f72d (294ms)
+910 silly extract protobufjs@5.0.3 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/protobufjs-33f3ec9f (408ms)
+911 timing audit submit Completed in 676ms
+912 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/audits/quick 676ms
+913 timing audit body Completed in 1ms
+914 silly extract grpc@1.14.1 extracted to /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging/grpc-d570486e (1614ms)
+915 timing action:extract Completed in 1648ms
+916 silly doReverseSerial unbuild 676
+917 silly doSerial remove 676
+918 silly doSerial move 676
+919 silly doSerial finalize 676
+920 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/ansi-regex
+921 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/balanced-match
+922 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/camelcase
+923 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/code-point-at
+924 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/colour
+925 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/concat-map
+926 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/brace-expansion
+927 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/decamelize
+928 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/fs.realpath
+929 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/abbrev
+930 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/ansi-regex
+931 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/aproba
+932 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/balanced-match
+933 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/chownr
+934 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/code-point-at
+935 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/concat-map
+936 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/brace-expansion
+937 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/console-control-strings
+938 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/core-util-is
+939 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/deep-extend
+940 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/delegates
+941 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/detect-libc
+942 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/fs.realpath
+943 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/has-unicode
+944 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/inherits
+945 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/ini
+946 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/isarray
+947 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/minimatch
+948 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/ignore-walk
+949 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/minimist
+950 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/mkdirp/node_modules/minimist
+951 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/mkdirp
+952 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/ms
+953 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/debug
+954 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/npm-bundled
+955 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/npm-packlist
+956 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/number-is-nan
+957 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/is-fullwidth-code-point
+958 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/object-assign
+959 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/os-homedir
+960 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/os-tmpdir
+961 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/osenv
+962 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/nopt
+963 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/path-is-absolute
+964 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/process-nextick-args
+965 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/safe-buffer
+966 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/safer-buffer
+967 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/iconv-lite
+968 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/sax
+969 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/needle
+970 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/semver
+971 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/set-blocking
+972 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/signal-exit
+973 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/string_decoder
+974 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/strip-ansi
+975 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/string-width
+976 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/strip-json-comments
+977 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/rc
+978 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/util-deprecate
+979 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/readable-stream
+980 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/are-we-there-yet
+981 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/wide-align
+982 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/gauge
+983 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/npmlog
+984 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/wrappy
+985 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/once
+986 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/inflight
+987 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/glob
+988 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/rimraf
+989 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/yallist
+990 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/minipass
+991 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/fs-minipass
+992 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/minizlib
+993 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/tar
+994 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/node-pre-gyp
+995 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/inherits
+996 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/invert-kv
+997 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/lcid
+998 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/long
+999 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/bytebuffer
+1000 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/minimatch
+1001 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/nan
+1002 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/number-is-nan
+1003 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/is-fullwidth-code-point
+1004 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/optjs
+1005 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/ascli
+1006 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/os-locale
+1007 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/path-is-absolute
+1008 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/strip-ansi
+1009 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/string-width
+1010 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/window-size
+1011 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/wrap-ansi
+1012 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/cliui
+1013 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/wrappy
+1014 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/once
+1015 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/inflight
+1016 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/glob
+1017 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/y18n
+1018 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/yargs
+1019 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/protobufjs
+1020 silly finalize /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc
+1021 timing action:finalize Completed in 174ms
+1022 silly doParallel refresh-package-json 101
+1023 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/ansi-regex
+1024 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/balanced-match
+1025 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/camelcase
+1026 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/code-point-at
+1027 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/colour
+1028 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/concat-map
+1029 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/brace-expansion
+1030 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/decamelize
+1031 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/fs.realpath
+1032 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/abbrev
+1033 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/ansi-regex
+1034 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/aproba
+1035 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/balanced-match
+1036 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/chownr
+1037 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/code-point-at
+1038 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/concat-map
+1039 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/brace-expansion
+1040 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/console-control-strings
+1041 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/core-util-is
+1042 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/deep-extend
+1043 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/delegates
+1044 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/detect-libc
+1045 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/fs.realpath
+1046 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/has-unicode
+1047 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/inherits
+1048 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/ini
+1049 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/isarray
+1050 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/minimatch
+1051 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/ignore-walk
+1052 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/minimist
+1053 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/mkdirp/node_modules/minimist
+1054 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/mkdirp
+1055 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/ms
+1056 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/debug
+1057 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/npm-bundled
+1058 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/npm-packlist
+1059 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/number-is-nan
+1060 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/is-fullwidth-code-point
+1061 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/object-assign
+1062 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/os-homedir
+1063 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/os-tmpdir
+1064 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/osenv
+1065 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/nopt
+1066 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/path-is-absolute
+1067 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/process-nextick-args
+1068 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/safe-buffer
+1069 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/safer-buffer
+1070 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/iconv-lite
+1071 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/sax
+1072 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/needle
+1073 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc
+1074 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/protobufjs
+1075 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/yargs
+1076 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/y18n
+1077 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/glob
+1078 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/inflight
+1079 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/once
+1080 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/wrappy
+1081 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/cliui
+1082 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/wrap-ansi
+1083 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/window-size
+1084 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/string-width
+1085 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/strip-ansi
+1086 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/path-is-absolute
+1087 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/os-locale
+1088 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/ascli
+1089 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/optjs
+1090 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/is-fullwidth-code-point
+1091 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/number-is-nan
+1092 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/nan
+1093 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/minimatch
+1094 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/bytebuffer
+1095 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/long
+1096 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/lcid
+1097 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/invert-kv
+1098 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/inherits
+1099 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/node-pre-gyp
+1100 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/tar
+1101 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/minizlib
+1102 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/fs-minipass
+1103 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/minipass
+1104 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/yallist
+1105 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/rimraf
+1106 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/glob
+1107 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/inflight
+1108 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/once
+1109 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/wrappy
+1110 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/npmlog
+1111 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/gauge
+1112 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/wide-align
+1113 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/are-we-there-yet
+1114 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/readable-stream
+1115 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/util-deprecate
+1116 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/rc
+1117 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/strip-json-comments
+1118 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/string-width
+1119 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/strip-ansi
+1120 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/string_decoder
+1121 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/signal-exit
+1122 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/set-blocking
+1123 silly refresh-package-json /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/semver
+1124 timing action:refresh-package-json Completed in 238ms
+1125 silly doParallel preinstall 101
+1126 silly preinstall ansi-regex@2.1.1
+1127 info lifecycle ansi-regex@2.1.1~preinstall: ansi-regex@2.1.1
+1128 silly preinstall balanced-match@1.0.0
+1129 info lifecycle balanced-match@1.0.0~preinstall: balanced-match@1.0.0
+1130 silly preinstall camelcase@2.1.1
+1131 info lifecycle camelcase@2.1.1~preinstall: camelcase@2.1.1
+1132 silly preinstall code-point-at@1.1.0
+1133 info lifecycle code-point-at@1.1.0~preinstall: code-point-at@1.1.0
+1134 silly preinstall colour@0.7.1
+1135 info lifecycle colour@0.7.1~preinstall: colour@0.7.1
+1136 silly preinstall concat-map@0.0.1
+1137 info lifecycle concat-map@0.0.1~preinstall: concat-map@0.0.1
+1138 silly preinstall brace-expansion@1.1.11
+1139 info lifecycle brace-expansion@1.1.11~preinstall: brace-expansion@1.1.11
+1140 silly preinstall decamelize@1.2.0
+1141 info lifecycle decamelize@1.2.0~preinstall: decamelize@1.2.0
+1142 silly preinstall fs.realpath@1.0.0
+1143 info lifecycle fs.realpath@1.0.0~preinstall: fs.realpath@1.0.0
+1144 silly preinstall abbrev@1.1.1
+1145 info lifecycle abbrev@1.1.1~preinstall: abbrev@1.1.1
+1146 silly preinstall ansi-regex@2.1.1
+1147 info lifecycle ansi-regex@2.1.1~preinstall: ansi-regex@2.1.1
+1148 silly preinstall aproba@1.2.0
+1149 info lifecycle aproba@1.2.0~preinstall: aproba@1.2.0
+1150 silly preinstall balanced-match@1.0.0
+1151 info lifecycle balanced-match@1.0.0~preinstall: balanced-match@1.0.0
+1152 silly preinstall chownr@1.0.1
+1153 info lifecycle chownr@1.0.1~preinstall: chownr@1.0.1
+1154 silly preinstall code-point-at@1.1.0
+1155 info lifecycle code-point-at@1.1.0~preinstall: code-point-at@1.1.0
+1156 silly preinstall concat-map@0.0.1
+1157 info lifecycle concat-map@0.0.1~preinstall: concat-map@0.0.1
+1158 silly preinstall brace-expansion@1.1.11
+1159 info lifecycle brace-expansion@1.1.11~preinstall: brace-expansion@1.1.11
+1160 silly preinstall console-control-strings@1.1.0
+1161 info lifecycle console-control-strings@1.1.0~preinstall: console-control-strings@1.1.0
+1162 silly preinstall core-util-is@1.0.2
+1163 info lifecycle core-util-is@1.0.2~preinstall: core-util-is@1.0.2
+1164 silly preinstall deep-extend@0.6.0
+1165 info lifecycle deep-extend@0.6.0~preinstall: deep-extend@0.6.0
+1166 silly preinstall delegates@1.0.0
+1167 info lifecycle delegates@1.0.0~preinstall: delegates@1.0.0
+1168 silly preinstall detect-libc@1.0.3
+1169 info lifecycle detect-libc@1.0.3~preinstall: detect-libc@1.0.3
+1170 silly preinstall fs.realpath@1.0.0
+1171 info lifecycle fs.realpath@1.0.0~preinstall: fs.realpath@1.0.0
+1172 silly preinstall has-unicode@2.0.1
+1173 info lifecycle has-unicode@2.0.1~preinstall: has-unicode@2.0.1
+1174 silly preinstall inherits@2.0.3
+1175 info lifecycle inherits@2.0.3~preinstall: inherits@2.0.3
+1176 silly preinstall ini@1.3.5
+1177 info lifecycle ini@1.3.5~preinstall: ini@1.3.5
+1178 silly preinstall isarray@1.0.0
+1179 info lifecycle isarray@1.0.0~preinstall: isarray@1.0.0
+1180 silly preinstall minimatch@3.0.4
+1181 info lifecycle minimatch@3.0.4~preinstall: minimatch@3.0.4
+1182 silly preinstall ignore-walk@3.0.1
+1183 info lifecycle ignore-walk@3.0.1~preinstall: ignore-walk@3.0.1
+1184 silly preinstall minimist@1.2.0
+1185 info lifecycle minimist@1.2.0~preinstall: minimist@1.2.0
+1186 silly preinstall minimist@0.0.8
+1187 info lifecycle minimist@0.0.8~preinstall: minimist@0.0.8
+1188 silly preinstall mkdirp@0.5.1
+1189 info lifecycle mkdirp@0.5.1~preinstall: mkdirp@0.5.1
+1190 silly preinstall ms@2.0.0
+1191 info lifecycle ms@2.0.0~preinstall: ms@2.0.0
+1192 silly preinstall debug@2.6.9
+1193 info lifecycle debug@2.6.9~preinstall: debug@2.6.9
+1194 silly preinstall npm-bundled@1.0.3
+1195 info lifecycle npm-bundled@1.0.3~preinstall: npm-bundled@1.0.3
+1196 silly preinstall npm-packlist@1.1.11
+1197 info lifecycle npm-packlist@1.1.11~preinstall: npm-packlist@1.1.11
+1198 silly preinstall number-is-nan@1.0.1
+1199 info lifecycle number-is-nan@1.0.1~preinstall: number-is-nan@1.0.1
+1200 silly preinstall is-fullwidth-code-point@1.0.0
+1201 info lifecycle is-fullwidth-code-point@1.0.0~preinstall: is-fullwidth-code-point@1.0.0
+1202 silly preinstall object-assign@4.1.1
+1203 info lifecycle object-assign@4.1.1~preinstall: object-assign@4.1.1
+1204 silly preinstall os-homedir@1.0.2
+1205 info lifecycle os-homedir@1.0.2~preinstall: os-homedir@1.0.2
+1206 silly preinstall os-tmpdir@1.0.2
+1207 info lifecycle os-tmpdir@1.0.2~preinstall: os-tmpdir@1.0.2
+1208 silly preinstall osenv@0.1.5
+1209 info lifecycle osenv@0.1.5~preinstall: osenv@0.1.5
+1210 silly preinstall nopt@4.0.1
+1211 info lifecycle nopt@4.0.1~preinstall: nopt@4.0.1
+1212 silly preinstall path-is-absolute@1.0.1
+1213 info lifecycle path-is-absolute@1.0.1~preinstall: path-is-absolute@1.0.1
+1214 silly preinstall process-nextick-args@2.0.0
+1215 info lifecycle process-nextick-args@2.0.0~preinstall: process-nextick-args@2.0.0
+1216 silly preinstall safe-buffer@5.1.2
+1217 info lifecycle safe-buffer@5.1.2~preinstall: safe-buffer@5.1.2
+1218 silly preinstall safer-buffer@2.1.2
+1219 info lifecycle safer-buffer@2.1.2~preinstall: safer-buffer@2.1.2
+1220 silly preinstall iconv-lite@0.4.23
+1221 info lifecycle iconv-lite@0.4.23~preinstall: iconv-lite@0.4.23
+1222 silly preinstall sax@1.2.4
+1223 info lifecycle sax@1.2.4~preinstall: sax@1.2.4
+1224 silly preinstall needle@2.2.2
+1225 info lifecycle needle@2.2.2~preinstall: needle@2.2.2
+1226 silly preinstall grpc@1.14.1
+1227 info lifecycle grpc@1.14.1~preinstall: grpc@1.14.1
+1228 silly preinstall protobufjs@5.0.3
+1229 info lifecycle protobufjs@5.0.3~preinstall: protobufjs@5.0.3
+1230 silly preinstall yargs@3.32.0
+1231 info lifecycle yargs@3.32.0~preinstall: yargs@3.32.0
+1232 silly preinstall y18n@3.2.1
+1233 info lifecycle y18n@3.2.1~preinstall: y18n@3.2.1
+1234 silly preinstall glob@7.1.3
+1235 info lifecycle glob@7.1.3~preinstall: glob@7.1.3
+1236 silly preinstall inflight@1.0.6
+1237 info lifecycle inflight@1.0.6~preinstall: inflight@1.0.6
+1238 silly preinstall once@1.4.0
+1239 info lifecycle once@1.4.0~preinstall: once@1.4.0
+1240 silly preinstall wrappy@1.0.2
+1241 info lifecycle wrappy@1.0.2~preinstall: wrappy@1.0.2
+1242 silly preinstall cliui@3.2.0
+1243 info lifecycle cliui@3.2.0~preinstall: cliui@3.2.0
+1244 silly preinstall wrap-ansi@2.1.0
+1245 info lifecycle wrap-ansi@2.1.0~preinstall: wrap-ansi@2.1.0
+1246 silly preinstall window-size@0.1.4
+1247 info lifecycle window-size@0.1.4~preinstall: window-size@0.1.4
+1248 silly preinstall string-width@1.0.2
+1249 info lifecycle string-width@1.0.2~preinstall: string-width@1.0.2
+1250 silly preinstall strip-ansi@3.0.1
+1251 info lifecycle strip-ansi@3.0.1~preinstall: strip-ansi@3.0.1
+1252 silly preinstall path-is-absolute@1.0.1
+1253 info lifecycle path-is-absolute@1.0.1~preinstall: path-is-absolute@1.0.1
+1254 silly preinstall os-locale@1.4.0
+1255 info lifecycle os-locale@1.4.0~preinstall: os-locale@1.4.0
+1256 silly preinstall ascli@1.0.1
+1257 info lifecycle ascli@1.0.1~preinstall: ascli@1.0.1
+1258 silly preinstall optjs@3.2.2
+1259 info lifecycle optjs@3.2.2~preinstall: optjs@3.2.2
+1260 silly preinstall is-fullwidth-code-point@1.0.0
+1261 info lifecycle is-fullwidth-code-point@1.0.0~preinstall: is-fullwidth-code-point@1.0.0
+1262 silly preinstall number-is-nan@1.0.1
+1263 info lifecycle number-is-nan@1.0.1~preinstall: number-is-nan@1.0.1
+1264 silly preinstall nan@2.11.0
+1265 info lifecycle nan@2.11.0~preinstall: nan@2.11.0
+1266 silly preinstall minimatch@3.0.4
+1267 info lifecycle minimatch@3.0.4~preinstall: minimatch@3.0.4
+1268 silly preinstall bytebuffer@5.0.1
+1269 info lifecycle bytebuffer@5.0.1~preinstall: bytebuffer@5.0.1
+1270 silly preinstall long@3.2.0
+1271 info lifecycle long@3.2.0~preinstall: long@3.2.0
+1272 silly preinstall lcid@1.0.0
+1273 info lifecycle lcid@1.0.0~preinstall: lcid@1.0.0
+1274 silly preinstall invert-kv@1.0.0
+1275 info lifecycle invert-kv@1.0.0~preinstall: invert-kv@1.0.0
+1276 silly preinstall inherits@2.0.3
+1277 info lifecycle inherits@2.0.3~preinstall: inherits@2.0.3
+1278 silly preinstall node-pre-gyp@0.10.3
+1279 info lifecycle node-pre-gyp@0.10.3~preinstall: node-pre-gyp@0.10.3
+1280 silly preinstall tar@4.4.6
+1281 info lifecycle tar@4.4.6~preinstall: tar@4.4.6
+1282 silly preinstall minizlib@1.1.0
+1283 info lifecycle minizlib@1.1.0~preinstall: minizlib@1.1.0
+1284 silly preinstall fs-minipass@1.2.5
+1285 info lifecycle fs-minipass@1.2.5~preinstall: fs-minipass@1.2.5
+1286 silly preinstall minipass@2.3.3
+1287 info lifecycle minipass@2.3.3~preinstall: minipass@2.3.3
+1288 silly preinstall yallist@3.0.2
+1289 info lifecycle yallist@3.0.2~preinstall: yallist@3.0.2
+1290 silly preinstall rimraf@2.6.2
+1291 info lifecycle rimraf@2.6.2~preinstall: rimraf@2.6.2
+1292 silly preinstall glob@7.1.2
+1293 info lifecycle glob@7.1.2~preinstall: glob@7.1.2
+1294 silly preinstall inflight@1.0.6
+1295 info lifecycle inflight@1.0.6~preinstall: inflight@1.0.6
+1296 silly preinstall once@1.4.0
+1297 info lifecycle once@1.4.0~preinstall: once@1.4.0
+1298 silly preinstall wrappy@1.0.2
+1299 info lifecycle wrappy@1.0.2~preinstall: wrappy@1.0.2
+1300 silly preinstall npmlog@4.1.2
+1301 info lifecycle npmlog@4.1.2~preinstall: npmlog@4.1.2
+1302 silly preinstall gauge@2.7.4
+1303 info lifecycle gauge@2.7.4~preinstall: gauge@2.7.4
+1304 silly preinstall wide-align@1.1.3
+1305 info lifecycle wide-align@1.1.3~preinstall: wide-align@1.1.3
+1306 silly preinstall are-we-there-yet@1.1.5
+1307 info lifecycle are-we-there-yet@1.1.5~preinstall: are-we-there-yet@1.1.5
+1308 silly preinstall readable-stream@2.3.6
+1309 info lifecycle readable-stream@2.3.6~preinstall: readable-stream@2.3.6
+1310 silly preinstall util-deprecate@1.0.2
+1311 info lifecycle util-deprecate@1.0.2~preinstall: util-deprecate@1.0.2
+1312 silly preinstall rc@1.2.8
+1313 info lifecycle rc@1.2.8~preinstall: rc@1.2.8
+1314 silly preinstall strip-json-comments@2.0.1
+1315 info lifecycle strip-json-comments@2.0.1~preinstall: strip-json-comments@2.0.1
+1316 silly preinstall string-width@1.0.2
+1317 info lifecycle string-width@1.0.2~preinstall: string-width@1.0.2
+1318 silly preinstall strip-ansi@3.0.1
+1319 info lifecycle strip-ansi@3.0.1~preinstall: strip-ansi@3.0.1
+1320 silly preinstall string_decoder@1.1.1
+1321 info lifecycle string_decoder@1.1.1~preinstall: string_decoder@1.1.1
+1322 silly preinstall signal-exit@3.0.2
+1323 info lifecycle signal-exit@3.0.2~preinstall: signal-exit@3.0.2
+1324 silly preinstall set-blocking@2.0.0
+1325 info lifecycle set-blocking@2.0.0~preinstall: set-blocking@2.0.0
+1326 silly preinstall semver@5.5.0
+1327 info lifecycle semver@5.5.0~preinstall: semver@5.5.0
+1328 timing action:preinstall Completed in 14ms
+1329 silly doSerial build 676
+1330 silly build ansi-regex@2.1.1
+1331 info linkStuff ansi-regex@2.1.1
+1332 silly linkStuff ansi-regex@2.1.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1333 silly build balanced-match@1.0.0
+1334 info linkStuff balanced-match@1.0.0
+1335 silly linkStuff balanced-match@1.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1336 silly build camelcase@2.1.1
+1337 info linkStuff camelcase@2.1.1
+1338 silly linkStuff camelcase@2.1.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1339 silly build code-point-at@1.1.0
+1340 info linkStuff code-point-at@1.1.0
+1341 silly linkStuff code-point-at@1.1.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1342 silly build colour@0.7.1
+1343 info linkStuff colour@0.7.1
+1344 silly linkStuff colour@0.7.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1345 silly build concat-map@0.0.1
+1346 info linkStuff concat-map@0.0.1
+1347 silly linkStuff concat-map@0.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1348 silly build brace-expansion@1.1.11
+1349 info linkStuff brace-expansion@1.1.11
+1350 silly linkStuff brace-expansion@1.1.11 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1351 silly build decamelize@1.2.0
+1352 info linkStuff decamelize@1.2.0
+1353 silly linkStuff decamelize@1.2.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1354 silly build fs.realpath@1.0.0
+1355 info linkStuff fs.realpath@1.0.0
+1356 silly linkStuff fs.realpath@1.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1357 silly build abbrev@1.1.1
+1358 info linkStuff abbrev@1.1.1
+1359 silly linkStuff abbrev@1.1.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1360 silly build ansi-regex@2.1.1
+1361 info linkStuff ansi-regex@2.1.1
+1362 silly linkStuff ansi-regex@2.1.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1363 silly build aproba@1.2.0
+1364 info linkStuff aproba@1.2.0
+1365 silly linkStuff aproba@1.2.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1366 silly build balanced-match@1.0.0
+1367 info linkStuff balanced-match@1.0.0
+1368 silly linkStuff balanced-match@1.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1369 silly build chownr@1.0.1
+1370 info linkStuff chownr@1.0.1
+1371 silly linkStuff chownr@1.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1372 silly build code-point-at@1.1.0
+1373 info linkStuff code-point-at@1.1.0
+1374 silly linkStuff code-point-at@1.1.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1375 silly build concat-map@0.0.1
+1376 info linkStuff concat-map@0.0.1
+1377 silly linkStuff concat-map@0.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1378 silly build brace-expansion@1.1.11
+1379 info linkStuff brace-expansion@1.1.11
+1380 silly linkStuff brace-expansion@1.1.11 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1381 silly build console-control-strings@1.1.0
+1382 info linkStuff console-control-strings@1.1.0
+1383 silly linkStuff console-control-strings@1.1.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1384 silly build core-util-is@1.0.2
+1385 info linkStuff core-util-is@1.0.2
+1386 silly linkStuff core-util-is@1.0.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1387 silly build deep-extend@0.6.0
+1388 info linkStuff deep-extend@0.6.0
+1389 silly linkStuff deep-extend@0.6.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1390 silly build delegates@1.0.0
+1391 info linkStuff delegates@1.0.0
+1392 silly linkStuff delegates@1.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1393 silly build detect-libc@1.0.3
+1394 info linkStuff detect-libc@1.0.3
+1395 silly linkStuff detect-libc@1.0.3 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1396 verbose linkBins [
+1396 verbose linkBins   { 'detect-libc': 'bin/detect-libc.js' },
+1396 verbose linkBins   '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin',
+1396 verbose linkBins   false
+1396 verbose linkBins ]
+1397 silly gently link link does not already exist {
+1397 silly gently link   link: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin/detect-libc',
+1397 silly gently link   target: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/detect-libc/bin/detect-libc.js'
+1397 silly gently link }
+1398 silly build fs.realpath@1.0.0
+1399 info linkStuff fs.realpath@1.0.0
+1400 silly linkStuff fs.realpath@1.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1401 silly build has-unicode@2.0.1
+1402 info linkStuff has-unicode@2.0.1
+1403 silly linkStuff has-unicode@2.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1404 silly build inherits@2.0.3
+1405 info linkStuff inherits@2.0.3
+1406 silly linkStuff inherits@2.0.3 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1407 silly build ini@1.3.5
+1408 info linkStuff ini@1.3.5
+1409 silly linkStuff ini@1.3.5 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1410 silly build isarray@1.0.0
+1411 info linkStuff isarray@1.0.0
+1412 silly linkStuff isarray@1.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1413 silly build minimatch@3.0.4
+1414 info linkStuff minimatch@3.0.4
+1415 silly linkStuff minimatch@3.0.4 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1416 silly build ignore-walk@3.0.1
+1417 info linkStuff ignore-walk@3.0.1
+1418 silly linkStuff ignore-walk@3.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1419 silly build minimist@1.2.0
+1420 info linkStuff minimist@1.2.0
+1421 silly linkStuff minimist@1.2.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1422 silly build minimist@0.0.8
+1423 info linkStuff minimist@0.0.8
+1424 silly linkStuff minimist@0.0.8 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/mkdirp/node_modules as its parent node_modules
+1425 silly build mkdirp@0.5.1
+1426 info linkStuff mkdirp@0.5.1
+1427 silly linkStuff mkdirp@0.5.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1428 verbose linkBins [
+1428 verbose linkBins   { mkdirp: 'bin/cmd.js' },
+1428 verbose linkBins   '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin',
+1428 verbose linkBins   false
+1428 verbose linkBins ]
+1429 silly gently link link does not already exist {
+1429 silly gently link   link: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin/mkdirp',
+1429 silly gently link   target: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/mkdirp/bin/cmd.js'
+1429 silly gently link }
+1430 silly build ms@2.0.0
+1431 info linkStuff ms@2.0.0
+1432 silly linkStuff ms@2.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1433 silly build debug@2.6.9
+1434 info linkStuff debug@2.6.9
+1435 silly linkStuff debug@2.6.9 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1436 silly build npm-bundled@1.0.3
+1437 info linkStuff npm-bundled@1.0.3
+1438 silly linkStuff npm-bundled@1.0.3 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1439 silly build npm-packlist@1.1.11
+1440 info linkStuff npm-packlist@1.1.11
+1441 silly linkStuff npm-packlist@1.1.11 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1442 silly build number-is-nan@1.0.1
+1443 info linkStuff number-is-nan@1.0.1
+1444 silly linkStuff number-is-nan@1.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1445 silly build is-fullwidth-code-point@1.0.0
+1446 info linkStuff is-fullwidth-code-point@1.0.0
+1447 silly linkStuff is-fullwidth-code-point@1.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1448 silly build object-assign@4.1.1
+1449 info linkStuff object-assign@4.1.1
+1450 silly linkStuff object-assign@4.1.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1451 silly build os-homedir@1.0.2
+1452 info linkStuff os-homedir@1.0.2
+1453 silly linkStuff os-homedir@1.0.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1454 silly build os-tmpdir@1.0.2
+1455 info linkStuff os-tmpdir@1.0.2
+1456 silly linkStuff os-tmpdir@1.0.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1457 silly build osenv@0.1.5
+1458 info linkStuff osenv@0.1.5
+1459 silly linkStuff osenv@0.1.5 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1460 silly build nopt@4.0.1
+1461 info linkStuff nopt@4.0.1
+1462 silly linkStuff nopt@4.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1463 verbose linkBins [
+1463 verbose linkBins   { nopt: 'bin/nopt.js' },
+1463 verbose linkBins   '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin',
+1463 verbose linkBins   false
+1463 verbose linkBins ]
+1464 silly gently link link does not already exist {
+1464 silly gently link   link: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin/nopt',
+1464 silly gently link   target: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/nopt/bin/nopt.js'
+1464 silly gently link }
+1465 silly build path-is-absolute@1.0.1
+1466 info linkStuff path-is-absolute@1.0.1
+1467 silly linkStuff path-is-absolute@1.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1468 silly build process-nextick-args@2.0.0
+1469 info linkStuff process-nextick-args@2.0.0
+1470 silly linkStuff process-nextick-args@2.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1471 silly build safe-buffer@5.1.2
+1472 info linkStuff safe-buffer@5.1.2
+1473 silly linkStuff safe-buffer@5.1.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1474 silly build safer-buffer@2.1.2
+1475 info linkStuff safer-buffer@2.1.2
+1476 silly linkStuff safer-buffer@2.1.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1477 silly build iconv-lite@0.4.23
+1478 info linkStuff iconv-lite@0.4.23
+1479 silly linkStuff iconv-lite@0.4.23 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1480 silly build sax@1.2.4
+1481 info linkStuff sax@1.2.4
+1482 silly linkStuff sax@1.2.4 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1483 silly build needle@2.2.2
+1484 info linkStuff needle@2.2.2
+1485 silly linkStuff needle@2.2.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1486 verbose linkBins [
+1486 verbose linkBins   { needle: 'bin/needle' },
+1486 verbose linkBins   '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin',
+1486 verbose linkBins   false
+1486 verbose linkBins ]
+1487 silly gently link link does not already exist {
+1487 silly gently link   link: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin/needle',
+1487 silly gently link   target: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/needle/bin/needle'
+1487 silly gently link }
+1488 silly build semver@5.5.0
+1489 info linkStuff semver@5.5.0
+1490 silly linkStuff semver@5.5.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1491 verbose linkBins [
+1491 verbose linkBins   { semver: 'bin/semver' },
+1491 verbose linkBins   '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin',
+1491 verbose linkBins   false
+1491 verbose linkBins ]
+1492 silly gently link link does not already exist {
+1492 silly gently link   link: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin/semver',
+1492 silly gently link   target: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/semver/bin/semver'
+1492 silly gently link }
+1493 silly build set-blocking@2.0.0
+1494 info linkStuff set-blocking@2.0.0
+1495 silly linkStuff set-blocking@2.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1496 silly build signal-exit@3.0.2
+1497 info linkStuff signal-exit@3.0.2
+1498 silly linkStuff signal-exit@3.0.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1499 silly build string_decoder@1.1.1
+1500 info linkStuff string_decoder@1.1.1
+1501 silly linkStuff string_decoder@1.1.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1502 silly build strip-ansi@3.0.1
+1503 info linkStuff strip-ansi@3.0.1
+1504 silly linkStuff strip-ansi@3.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1505 silly build string-width@1.0.2
+1506 info linkStuff string-width@1.0.2
+1507 silly linkStuff string-width@1.0.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1508 silly build strip-json-comments@2.0.1
+1509 info linkStuff strip-json-comments@2.0.1
+1510 silly linkStuff strip-json-comments@2.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1511 silly build rc@1.2.8
+1512 info linkStuff rc@1.2.8
+1513 silly linkStuff rc@1.2.8 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1514 verbose linkBins [
+1514 verbose linkBins   { rc: 'cli.js' },
+1514 verbose linkBins   '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin',
+1514 verbose linkBins   false
+1514 verbose linkBins ]
+1515 silly gently link link does not already exist {
+1515 silly gently link   link: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin/rc',
+1515 silly gently link   target: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/rc/cli.js'
+1515 silly gently link }
+1516 silly build util-deprecate@1.0.2
+1517 info linkStuff util-deprecate@1.0.2
+1518 silly linkStuff util-deprecate@1.0.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1519 silly build readable-stream@2.3.6
+1520 info linkStuff readable-stream@2.3.6
+1521 silly linkStuff readable-stream@2.3.6 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1522 silly build are-we-there-yet@1.1.5
+1523 info linkStuff are-we-there-yet@1.1.5
+1524 silly linkStuff are-we-there-yet@1.1.5 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1525 silly build wide-align@1.1.3
+1526 info linkStuff wide-align@1.1.3
+1527 silly linkStuff wide-align@1.1.3 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1528 silly build gauge@2.7.4
+1529 info linkStuff gauge@2.7.4
+1530 silly linkStuff gauge@2.7.4 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1531 silly build npmlog@4.1.2
+1532 info linkStuff npmlog@4.1.2
+1533 silly linkStuff npmlog@4.1.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1534 silly build wrappy@1.0.2
+1535 info linkStuff wrappy@1.0.2
+1536 silly linkStuff wrappy@1.0.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1537 silly build once@1.4.0
+1538 info linkStuff once@1.4.0
+1539 silly linkStuff once@1.4.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1540 silly build inflight@1.0.6
+1541 info linkStuff inflight@1.0.6
+1542 silly linkStuff inflight@1.0.6 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1543 silly build glob@7.1.2
+1544 info linkStuff glob@7.1.2
+1545 silly linkStuff glob@7.1.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1546 silly build rimraf@2.6.2
+1547 info linkStuff rimraf@2.6.2
+1548 silly linkStuff rimraf@2.6.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1549 verbose linkBins [
+1549 verbose linkBins   { rimraf: 'bin.js' },
+1549 verbose linkBins   '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin',
+1549 verbose linkBins   false
+1549 verbose linkBins ]
+1550 silly gently link link does not already exist {
+1550 silly gently link   link: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin/rimraf',
+1550 silly gently link   target: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/rimraf/bin.js'
+1550 silly gently link }
+1551 silly build yallist@3.0.2
+1552 info linkStuff yallist@3.0.2
+1553 silly linkStuff yallist@3.0.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1554 silly build minipass@2.3.3
+1555 info linkStuff minipass@2.3.3
+1556 silly linkStuff minipass@2.3.3 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1557 silly build fs-minipass@1.2.5
+1558 info linkStuff fs-minipass@1.2.5
+1559 silly linkStuff fs-minipass@1.2.5 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1560 silly build minizlib@1.1.0
+1561 info linkStuff minizlib@1.1.0
+1562 silly linkStuff minizlib@1.1.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1563 silly build tar@4.4.6
+1564 info linkStuff tar@4.4.6
+1565 silly linkStuff tar@4.4.6 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1566 silly build node-pre-gyp@0.10.3
+1567 info linkStuff node-pre-gyp@0.10.3
+1568 silly linkStuff node-pre-gyp@0.10.3 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules as its parent node_modules
+1569 verbose linkBins [
+1569 verbose linkBins   { 'node-pre-gyp': 'bin/node-pre-gyp' },
+1569 verbose linkBins   '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin',
+1569 verbose linkBins   false
+1569 verbose linkBins ]
+1570 silly gently link link does not already exist {
+1570 silly gently link   link: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin/node-pre-gyp',
+1570 silly gently link   target: '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/node-pre-gyp/bin/node-pre-gyp'
+1570 silly gently link }
+1571 silly build inherits@2.0.3
+1572 info linkStuff inherits@2.0.3
+1573 silly linkStuff inherits@2.0.3 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1574 silly build invert-kv@1.0.0
+1575 info linkStuff invert-kv@1.0.0
+1576 silly linkStuff invert-kv@1.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1577 silly build lcid@1.0.0
+1578 info linkStuff lcid@1.0.0
+1579 silly linkStuff lcid@1.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1580 silly build long@3.2.0
+1581 info linkStuff long@3.2.0
+1582 silly linkStuff long@3.2.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1583 silly build bytebuffer@5.0.1
+1584 info linkStuff bytebuffer@5.0.1
+1585 silly linkStuff bytebuffer@5.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1586 silly build minimatch@3.0.4
+1587 info linkStuff minimatch@3.0.4
+1588 silly linkStuff minimatch@3.0.4 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1589 silly build nan@2.11.0
+1590 info linkStuff nan@2.11.0
+1591 silly linkStuff nan@2.11.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1592 silly build number-is-nan@1.0.1
+1593 info linkStuff number-is-nan@1.0.1
+1594 silly linkStuff number-is-nan@1.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1595 silly build is-fullwidth-code-point@1.0.0
+1596 info linkStuff is-fullwidth-code-point@1.0.0
+1597 silly linkStuff is-fullwidth-code-point@1.0.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1598 silly build optjs@3.2.2
+1599 info linkStuff optjs@3.2.2
+1600 silly linkStuff optjs@3.2.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1601 silly build ascli@1.0.1
+1602 info linkStuff ascli@1.0.1
+1603 silly linkStuff ascli@1.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1604 silly build os-locale@1.4.0
+1605 info linkStuff os-locale@1.4.0
+1606 silly linkStuff os-locale@1.4.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1607 silly build path-is-absolute@1.0.1
+1608 info linkStuff path-is-absolute@1.0.1
+1609 silly linkStuff path-is-absolute@1.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1610 silly build strip-ansi@3.0.1
+1611 info linkStuff strip-ansi@3.0.1
+1612 silly linkStuff strip-ansi@3.0.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1613 silly build string-width@1.0.2
+1614 info linkStuff string-width@1.0.2
+1615 silly linkStuff string-width@1.0.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1616 silly build window-size@0.1.4
+1617 info linkStuff window-size@0.1.4
+1618 silly linkStuff window-size@0.1.4 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1619 verbose linkBins [
+1619 verbose linkBins   { 'window-size': 'cli.js' },
+1619 verbose linkBins   '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.bin',
+1619 verbose linkBins   false
+1619 verbose linkBins ]
+1620 silly build wrap-ansi@2.1.0
+1621 info linkStuff wrap-ansi@2.1.0
+1622 silly linkStuff wrap-ansi@2.1.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1623 silly build cliui@3.2.0
+1624 info linkStuff cliui@3.2.0
+1625 silly linkStuff cliui@3.2.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1626 silly build wrappy@1.0.2
+1627 info linkStuff wrappy@1.0.2
+1628 silly linkStuff wrappy@1.0.2 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1629 silly build once@1.4.0
+1630 info linkStuff once@1.4.0
+1631 silly linkStuff once@1.4.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1632 silly build inflight@1.0.6
+1633 info linkStuff inflight@1.0.6
+1634 silly linkStuff inflight@1.0.6 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1635 silly build glob@7.1.3
+1636 info linkStuff glob@7.1.3
+1637 silly linkStuff glob@7.1.3 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1638 silly build y18n@3.2.1
+1639 info linkStuff y18n@3.2.1
+1640 silly linkStuff y18n@3.2.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1641 silly build yargs@3.32.0
+1642 info linkStuff yargs@3.32.0
+1643 silly linkStuff yargs@3.32.0 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1644 silly build protobufjs@5.0.3
+1645 info linkStuff protobufjs@5.0.3
+1646 silly linkStuff protobufjs@5.0.3 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1647 verbose linkBins [
+1647 verbose linkBins   { pbjs: 'bin/pbjs' },
+1647 verbose linkBins   '/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.bin',
+1647 verbose linkBins   false
+1647 verbose linkBins ]
+1648 silly linkBins Converting line endings of hashbang file: /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/protobufjs/bin/pbjs
+1649 silly build grpc@1.14.1
+1650 info linkStuff grpc@1.14.1
+1651 silly linkStuff grpc@1.14.1 has /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules as its parent node_modules
+1652 timing action:build Completed in 80ms
+1653 silly doSerial global-link 676
+1654 silly doParallel update-linked 0
+1655 silly doSerial install 676
+1656 silly install ansi-regex@2.1.1
+1657 info lifecycle ansi-regex@2.1.1~install: ansi-regex@2.1.1
+1658 silly install balanced-match@1.0.0
+1659 info lifecycle balanced-match@1.0.0~install: balanced-match@1.0.0
+1660 silly install camelcase@2.1.1
+1661 info lifecycle camelcase@2.1.1~install: camelcase@2.1.1
+1662 silly install code-point-at@1.1.0
+1663 info lifecycle code-point-at@1.1.0~install: code-point-at@1.1.0
+1664 silly install colour@0.7.1
+1665 info lifecycle colour@0.7.1~install: colour@0.7.1
+1666 silly install concat-map@0.0.1
+1667 info lifecycle concat-map@0.0.1~install: concat-map@0.0.1
+1668 silly install brace-expansion@1.1.11
+1669 info lifecycle brace-expansion@1.1.11~install: brace-expansion@1.1.11
+1670 silly install decamelize@1.2.0
+1671 info lifecycle decamelize@1.2.0~install: decamelize@1.2.0
+1672 silly install fs.realpath@1.0.0
+1673 info lifecycle fs.realpath@1.0.0~install: fs.realpath@1.0.0
+1674 silly install abbrev@1.1.1
+1675 info lifecycle abbrev@1.1.1~install: abbrev@1.1.1
+1676 silly install ansi-regex@2.1.1
+1677 info lifecycle ansi-regex@2.1.1~install: ansi-regex@2.1.1
+1678 silly install aproba@1.2.0
+1679 info lifecycle aproba@1.2.0~install: aproba@1.2.0
+1680 silly install balanced-match@1.0.0
+1681 info lifecycle balanced-match@1.0.0~install: balanced-match@1.0.0
+1682 silly install chownr@1.0.1
+1683 info lifecycle chownr@1.0.1~install: chownr@1.0.1
+1684 silly install code-point-at@1.1.0
+1685 info lifecycle code-point-at@1.1.0~install: code-point-at@1.1.0
+1686 silly install concat-map@0.0.1
+1687 info lifecycle concat-map@0.0.1~install: concat-map@0.0.1
+1688 silly install brace-expansion@1.1.11
+1689 info lifecycle brace-expansion@1.1.11~install: brace-expansion@1.1.11
+1690 silly install console-control-strings@1.1.0
+1691 info lifecycle console-control-strings@1.1.0~install: console-control-strings@1.1.0
+1692 silly install core-util-is@1.0.2
+1693 info lifecycle core-util-is@1.0.2~install: core-util-is@1.0.2
+1694 silly install deep-extend@0.6.0
+1695 info lifecycle deep-extend@0.6.0~install: deep-extend@0.6.0
+1696 silly install delegates@1.0.0
+1697 info lifecycle delegates@1.0.0~install: delegates@1.0.0
+1698 silly install detect-libc@1.0.3
+1699 info lifecycle detect-libc@1.0.3~install: detect-libc@1.0.3
+1700 silly install fs.realpath@1.0.0
+1701 info lifecycle fs.realpath@1.0.0~install: fs.realpath@1.0.0
+1702 silly install has-unicode@2.0.1
+1703 info lifecycle has-unicode@2.0.1~install: has-unicode@2.0.1
+1704 silly install inherits@2.0.3
+1705 info lifecycle inherits@2.0.3~install: inherits@2.0.3
+1706 silly install ini@1.3.5
+1707 info lifecycle ini@1.3.5~install: ini@1.3.5
+1708 silly install isarray@1.0.0
+1709 info lifecycle isarray@1.0.0~install: isarray@1.0.0
+1710 silly install minimatch@3.0.4
+1711 info lifecycle minimatch@3.0.4~install: minimatch@3.0.4
+1712 silly install ignore-walk@3.0.1
+1713 info lifecycle ignore-walk@3.0.1~install: ignore-walk@3.0.1
+1714 silly install minimist@1.2.0
+1715 info lifecycle minimist@1.2.0~install: minimist@1.2.0
+1716 silly install minimist@0.0.8
+1717 info lifecycle minimist@0.0.8~install: minimist@0.0.8
+1718 silly install mkdirp@0.5.1
+1719 info lifecycle mkdirp@0.5.1~install: mkdirp@0.5.1
+1720 silly install ms@2.0.0
+1721 info lifecycle ms@2.0.0~install: ms@2.0.0
+1722 silly install debug@2.6.9
+1723 info lifecycle debug@2.6.9~install: debug@2.6.9
+1724 silly install npm-bundled@1.0.3
+1725 info lifecycle npm-bundled@1.0.3~install: npm-bundled@1.0.3
+1726 silly install npm-packlist@1.1.11
+1727 info lifecycle npm-packlist@1.1.11~install: npm-packlist@1.1.11
+1728 silly install number-is-nan@1.0.1
+1729 info lifecycle number-is-nan@1.0.1~install: number-is-nan@1.0.1
+1730 silly install is-fullwidth-code-point@1.0.0
+1731 info lifecycle is-fullwidth-code-point@1.0.0~install: is-fullwidth-code-point@1.0.0
+1732 silly install object-assign@4.1.1
+1733 info lifecycle object-assign@4.1.1~install: object-assign@4.1.1
+1734 silly install os-homedir@1.0.2
+1735 info lifecycle os-homedir@1.0.2~install: os-homedir@1.0.2
+1736 silly install os-tmpdir@1.0.2
+1737 info lifecycle os-tmpdir@1.0.2~install: os-tmpdir@1.0.2
+1738 silly install osenv@0.1.5
+1739 info lifecycle osenv@0.1.5~install: osenv@0.1.5
+1740 silly install nopt@4.0.1
+1741 info lifecycle nopt@4.0.1~install: nopt@4.0.1
+1742 silly install path-is-absolute@1.0.1
+1743 info lifecycle path-is-absolute@1.0.1~install: path-is-absolute@1.0.1
+1744 silly install process-nextick-args@2.0.0
+1745 info lifecycle process-nextick-args@2.0.0~install: process-nextick-args@2.0.0
+1746 silly install safe-buffer@5.1.2
+1747 info lifecycle safe-buffer@5.1.2~install: safe-buffer@5.1.2
+1748 silly install safer-buffer@2.1.2
+1749 info lifecycle safer-buffer@2.1.2~install: safer-buffer@2.1.2
+1750 silly install iconv-lite@0.4.23
+1751 info lifecycle iconv-lite@0.4.23~install: iconv-lite@0.4.23
+1752 silly install sax@1.2.4
+1753 info lifecycle sax@1.2.4~install: sax@1.2.4
+1754 silly install needle@2.2.2
+1755 info lifecycle needle@2.2.2~install: needle@2.2.2
+1756 silly install semver@5.5.0
+1757 info lifecycle semver@5.5.0~install: semver@5.5.0
+1758 silly install set-blocking@2.0.0
+1759 info lifecycle set-blocking@2.0.0~install: set-blocking@2.0.0
+1760 silly install signal-exit@3.0.2
+1761 info lifecycle signal-exit@3.0.2~install: signal-exit@3.0.2
+1762 silly install string_decoder@1.1.1
+1763 info lifecycle string_decoder@1.1.1~install: string_decoder@1.1.1
+1764 silly install strip-ansi@3.0.1
+1765 info lifecycle strip-ansi@3.0.1~install: strip-ansi@3.0.1
+1766 silly install string-width@1.0.2
+1767 info lifecycle string-width@1.0.2~install: string-width@1.0.2
+1768 silly install strip-json-comments@2.0.1
+1769 info lifecycle strip-json-comments@2.0.1~install: strip-json-comments@2.0.1
+1770 silly install rc@1.2.8
+1771 info lifecycle rc@1.2.8~install: rc@1.2.8
+1772 silly install util-deprecate@1.0.2
+1773 info lifecycle util-deprecate@1.0.2~install: util-deprecate@1.0.2
+1774 silly install readable-stream@2.3.6
+1775 info lifecycle readable-stream@2.3.6~install: readable-stream@2.3.6
+1776 silly install are-we-there-yet@1.1.5
+1777 info lifecycle are-we-there-yet@1.1.5~install: are-we-there-yet@1.1.5
+1778 silly install wide-align@1.1.3
+1779 info lifecycle wide-align@1.1.3~install: wide-align@1.1.3
+1780 silly install gauge@2.7.4
+1781 info lifecycle gauge@2.7.4~install: gauge@2.7.4
+1782 silly install npmlog@4.1.2
+1783 info lifecycle npmlog@4.1.2~install: npmlog@4.1.2
+1784 silly install wrappy@1.0.2
+1785 info lifecycle wrappy@1.0.2~install: wrappy@1.0.2
+1786 silly install once@1.4.0
+1787 info lifecycle once@1.4.0~install: once@1.4.0
+1788 silly install inflight@1.0.6
+1789 info lifecycle inflight@1.0.6~install: inflight@1.0.6
+1790 silly install glob@7.1.2
+1791 info lifecycle glob@7.1.2~install: glob@7.1.2
+1792 silly install rimraf@2.6.2
+1793 info lifecycle rimraf@2.6.2~install: rimraf@2.6.2
+1794 silly install yallist@3.0.2
+1795 info lifecycle yallist@3.0.2~install: yallist@3.0.2
+1796 silly install minipass@2.3.3
+1797 info lifecycle minipass@2.3.3~install: minipass@2.3.3
+1798 silly install fs-minipass@1.2.5
+1799 info lifecycle fs-minipass@1.2.5~install: fs-minipass@1.2.5
+1800 silly install minizlib@1.1.0
+1801 info lifecycle minizlib@1.1.0~install: minizlib@1.1.0
+1802 silly install tar@4.4.6
+1803 info lifecycle tar@4.4.6~install: tar@4.4.6
+1804 silly install node-pre-gyp@0.10.3
+1805 info lifecycle node-pre-gyp@0.10.3~install: node-pre-gyp@0.10.3
+1806 silly install inherits@2.0.3
+1807 info lifecycle inherits@2.0.3~install: inherits@2.0.3
+1808 silly install invert-kv@1.0.0
+1809 info lifecycle invert-kv@1.0.0~install: invert-kv@1.0.0
+1810 silly install lcid@1.0.0
+1811 info lifecycle lcid@1.0.0~install: lcid@1.0.0
+1812 silly install long@3.2.0
+1813 info lifecycle long@3.2.0~install: long@3.2.0
+1814 silly install bytebuffer@5.0.1
+1815 info lifecycle bytebuffer@5.0.1~install: bytebuffer@5.0.1
+1816 silly install minimatch@3.0.4
+1817 info lifecycle minimatch@3.0.4~install: minimatch@3.0.4
+1818 silly install nan@2.11.0
+1819 info lifecycle nan@2.11.0~install: nan@2.11.0
+1820 silly install number-is-nan@1.0.1
+1821 info lifecycle number-is-nan@1.0.1~install: number-is-nan@1.0.1
+1822 silly install is-fullwidth-code-point@1.0.0
+1823 info lifecycle is-fullwidth-code-point@1.0.0~install: is-fullwidth-code-point@1.0.0
+1824 silly install optjs@3.2.2
+1825 info lifecycle optjs@3.2.2~install: optjs@3.2.2
+1826 silly install ascli@1.0.1
+1827 info lifecycle ascli@1.0.1~install: ascli@1.0.1
+1828 silly install os-locale@1.4.0
+1829 info lifecycle os-locale@1.4.0~install: os-locale@1.4.0
+1830 silly install path-is-absolute@1.0.1
+1831 info lifecycle path-is-absolute@1.0.1~install: path-is-absolute@1.0.1
+1832 silly install strip-ansi@3.0.1
+1833 info lifecycle strip-ansi@3.0.1~install: strip-ansi@3.0.1
+1834 silly install string-width@1.0.2
+1835 info lifecycle string-width@1.0.2~install: string-width@1.0.2
+1836 silly install window-size@0.1.4
+1837 info lifecycle window-size@0.1.4~install: window-size@0.1.4
+1838 silly install wrap-ansi@2.1.0
+1839 info lifecycle wrap-ansi@2.1.0~install: wrap-ansi@2.1.0
+1840 silly install cliui@3.2.0
+1841 info lifecycle cliui@3.2.0~install: cliui@3.2.0
+1842 silly install wrappy@1.0.2
+1843 info lifecycle wrappy@1.0.2~install: wrappy@1.0.2
+1844 silly install once@1.4.0
+1845 info lifecycle once@1.4.0~install: once@1.4.0
+1846 silly install inflight@1.0.6
+1847 info lifecycle inflight@1.0.6~install: inflight@1.0.6
+1848 silly install glob@7.1.3
+1849 info lifecycle glob@7.1.3~install: glob@7.1.3
+1850 silly install y18n@3.2.1
+1851 info lifecycle y18n@3.2.1~install: y18n@3.2.1
+1852 silly install yargs@3.32.0
+1853 info lifecycle yargs@3.32.0~install: yargs@3.32.0
+1854 silly install protobufjs@5.0.3
+1855 info lifecycle protobufjs@5.0.3~install: protobufjs@5.0.3
+1856 silly install grpc@1.14.1
+1857 info lifecycle grpc@1.14.1~install: grpc@1.14.1
+1858 verbose lifecycle grpc@1.14.1~install: unsafe-perm in lifecycle true
+1859 verbose lifecycle grpc@1.14.1~install: PATH: /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc/node_modules/.bin:/Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+1860 verbose lifecycle grpc@1.14.1~install: CWD: /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/grpc
+1861 silly lifecycle grpc@1.14.1~install: Args: [
+1861 silly lifecycle   '-c',
+1861 silly lifecycle   'node-pre-gyp install --fallback-to-build --library=static_library'
+1861 silly lifecycle ]
+1862 silly lifecycle grpc@1.14.1~install: Returned: code: 1  signal: null
+1863 info lifecycle grpc@1.14.1~install: Failed to exec install script
+1864 timing action:install Completed in 115409ms
+1865 verbose unlock done using /Users/abduldiallo/.npm/_locks/staging-aab2753c240574c5.lock for /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud/node_modules/.staging
+1866 timing stage:rollbackFailedOptional Completed in 880ms
+1867 timing stage:runTopLevelLifecycles Completed in 118905ms
+1868 silly saveTree notes_grpc@1.0.0
+1868 silly saveTree ├─┬ @grpc/proto-loader@0.3.0
+1868 silly saveTree │ ├── @types/lodash@4.14.116
+1868 silly saveTree │ ├── @types/node@9.6.31
+1868 silly saveTree │ ├── lodash@4.17.10
+1868 silly saveTree │ └─┬ protobufjs@6.8.8
+1868 silly saveTree │   ├── @protobufjs/aspromise@1.1.2
+1868 silly saveTree │   ├── @protobufjs/base64@1.1.2
+1868 silly saveTree │   ├── @protobufjs/codegen@2.0.4
+1868 silly saveTree │   ├── @protobufjs/eventemitter@1.1.0
+1868 silly saveTree │   ├─┬ @protobufjs/fetch@1.1.0
+1868 silly saveTree │   │ └── @protobufjs/inquire@1.1.0
+1868 silly saveTree │   ├── @protobufjs/float@1.0.2
+1868 silly saveTree │   ├── @protobufjs/inquire@1.1.0
+1868 silly saveTree │   ├── @protobufjs/path@1.1.2
+1868 silly saveTree │   ├── @protobufjs/pool@1.1.0
+1868 silly saveTree │   ├── @protobufjs/utf8@1.1.0
+1868 silly saveTree │   ├── @types/long@4.0.0
+1868 silly saveTree │   ├── @types/node@10.9.4
+1868 silly saveTree │   └── long@4.0.0
+1868 silly saveTree ├─┬ grpc@1.14.1
+1868 silly saveTree │ ├── nan@2.11.0
+1868 silly saveTree │ ├─┬ node-pre-gyp@0.10.3
+1868 silly saveTree │ │ ├── detect-libc@1.0.3
+1868 silly saveTree │ │ ├─┬ mkdirp@0.5.1
+1868 silly saveTree │ │ │ └── minimist@0.0.8
+1868 silly saveTree │ │ ├─┬ needle@2.2.2
+1868 silly saveTree │ │ │ ├─┬ debug@2.6.9
+1868 silly saveTree │ │ │ │ └── ms@2.0.0
+1868 silly saveTree │ │ │ ├─┬ iconv-lite@0.4.23
+1868 silly saveTree │ │ │ │ └── safer-buffer@2.1.2
+1868 silly saveTree │ │ │ └── sax@1.2.4
+1868 silly saveTree │ │ ├─┬ nopt@4.0.1
+1868 silly saveTree │ │ │ ├── abbrev@1.1.1
+1868 silly saveTree │ │ │ └─┬ osenv@0.1.5
+1868 silly saveTree │ │ │   ├── os-homedir@1.0.2
+1868 silly saveTree │ │ │   └── os-tmpdir@1.0.2
+1868 silly saveTree │ │ ├─┬ npm-packlist@1.1.11
+1868 silly saveTree │ │ │ ├─┬ ignore-walk@3.0.1
+1868 silly saveTree │ │ │ │ └─┬ minimatch@3.0.4
+1868 silly saveTree │ │ │ │   └─┬ brace-expansion@1.1.11
+1868 silly saveTree │ │ │ │     ├── balanced-match@1.0.0
+1868 silly saveTree │ │ │ │     └── concat-map@0.0.1
+1868 silly saveTree │ │ │ └── npm-bundled@1.0.3
+1868 silly saveTree │ │ ├─┬ npmlog@4.1.2
+1868 silly saveTree │ │ │ ├─┬ are-we-there-yet@1.1.5
+1868 silly saveTree │ │ │ │ ├── delegates@1.0.0
+1868 silly saveTree │ │ │ │ └─┬ readable-stream@2.3.6
+1868 silly saveTree │ │ │ │   ├── core-util-is@1.0.2
+1868 silly saveTree │ │ │ │   ├── inherits@2.0.3
+1868 silly saveTree │ │ │ │   ├── isarray@1.0.0
+1868 silly saveTree │ │ │ │   ├── process-nextick-args@2.0.0
+1868 silly saveTree │ │ │ │   ├── safe-buffer@5.1.2
+1868 silly saveTree │ │ │ │   ├── string_decoder@1.1.1
+1868 silly saveTree │ │ │ │   └── util-deprecate@1.0.2
+1868 silly saveTree │ │ │ ├── console-control-strings@1.1.0
+1868 silly saveTree │ │ │ ├─┬ gauge@2.7.4
+1868 silly saveTree │ │ │ │ ├── aproba@1.2.0
+1868 silly saveTree │ │ │ │ ├── has-unicode@2.0.1
+1868 silly saveTree │ │ │ │ ├── object-assign@4.1.1
+1868 silly saveTree │ │ │ │ ├── signal-exit@3.0.2
+1868 silly saveTree │ │ │ │ ├─┬ string-width@1.0.2
+1868 silly saveTree │ │ │ │ │ ├── code-point-at@1.1.0
+1868 silly saveTree │ │ │ │ │ ├─┬ is-fullwidth-code-point@1.0.0
+1868 silly saveTree │ │ │ │ │ │ └── number-is-nan@1.0.1
+1868 silly saveTree │ │ │ │ │ └─┬ strip-ansi@3.0.1
+1868 silly saveTree │ │ │ │ │   └── ansi-regex@2.1.1
+1868 silly saveTree │ │ │ │ ├── strip-ansi@3.0.1
+1868 silly saveTree │ │ │ │ └── wide-align@1.1.3
+1868 silly saveTree │ │ │ └── set-blocking@2.0.0
+1868 silly saveTree │ │ ├─┬ rc@1.2.8
+1868 silly saveTree │ │ │ ├── deep-extend@0.6.0
+1868 silly saveTree │ │ │ ├── ini@1.3.5
+1868 silly saveTree │ │ │ ├── minimist@1.2.0
+1868 silly saveTree │ │ │ └── strip-json-comments@2.0.1
+1868 silly saveTree │ │ ├─┬ rimraf@2.6.2
+1868 silly saveTree │ │ │ └─┬ glob@7.1.2
+1868 silly saveTree │ │ │   ├── fs.realpath@1.0.0
+1868 silly saveTree │ │ │   ├─┬ inflight@1.0.6
+1868 silly saveTree │ │ │   │ ├─┬ once@1.4.0
+1868 silly saveTree │ │ │   │ │ └── wrappy@1.0.2
+1868 silly saveTree │ │ │   │ └── wrappy@1.0.2
+1868 silly saveTree │ │ │   ├── once@1.4.0
+1868 silly saveTree │ │ │   └── path-is-absolute@1.0.1
+1868 silly saveTree │ │ ├── semver@5.5.0
+1868 silly saveTree │ │ └─┬ tar@4.4.6
+1868 silly saveTree │ │   ├── chownr@1.0.1
+1868 silly saveTree │ │   ├─┬ fs-minipass@1.2.5
+1868 silly saveTree │ │   │ └─┬ minipass@2.3.3
+1868 silly saveTree │ │   │   └── yallist@3.0.2
+1868 silly saveTree │ │   ├── minipass@2.3.3
+1868 silly saveTree │ │   ├── minizlib@1.1.0
+1868 silly saveTree │ │   └── yallist@3.0.2
+1868 silly saveTree │ └─┬ protobufjs@5.0.3
+1868 silly saveTree │   ├─┬ ascli@1.0.1
+1868 silly saveTree │   │ ├── colour@0.7.1
+1868 silly saveTree │   │ └── optjs@3.2.2
+1868 silly saveTree │   ├─┬ bytebuffer@5.0.1
+1868 silly saveTree │   │ └── long@3.2.0
+1868 silly saveTree │   ├─┬ glob@7.1.3
+1868 silly saveTree │   │ ├── fs.realpath@1.0.0
+1868 silly saveTree │   │ ├─┬ inflight@1.0.6
+1868 silly saveTree │   │ │ ├─┬ once@1.4.0
+1868 silly saveTree │   │ │ │ └── wrappy@1.0.2
+1868 silly saveTree │   │ │ └── wrappy@1.0.2
+1868 silly saveTree │   │ ├── inherits@2.0.3
+1868 silly saveTree │   │ ├─┬ minimatch@3.0.4
+1868 silly saveTree │   │ │ └─┬ brace-expansion@1.1.11
+1868 silly saveTree │   │ │   ├── balanced-match@1.0.0
+1868 silly saveTree │   │ │   └── concat-map@0.0.1
+1868 silly saveTree │   │ ├── once@1.4.0
+1868 silly saveTree │   │ └── path-is-absolute@1.0.1
+1868 silly saveTree │   └─┬ yargs@3.32.0
+1868 silly saveTree │     ├── camelcase@2.1.1
+1868 silly saveTree │     ├─┬ cliui@3.2.0
+1868 silly saveTree │     │ ├─┬ string-width@1.0.2
+1868 silly saveTree │     │ │ ├── code-point-at@1.1.0
+1868 silly saveTree │     │ │ ├─┬ is-fullwidth-code-point@1.0.0
+1868 silly saveTree │     │ │ │ └── number-is-nan@1.0.1
+1868 silly saveTree │     │ │ └─┬ strip-ansi@3.0.1
+1868 silly saveTree │     │ │   └── ansi-regex@2.1.1
+1868 silly saveTree │     │ ├── strip-ansi@3.0.1
+1868 silly saveTree │     │ └── wrap-ansi@2.1.0
+1868 silly saveTree │     ├── decamelize@1.2.0
+1868 silly saveTree │     ├─┬ os-locale@1.4.0
+1868 silly saveTree │     │ └─┬ lcid@1.0.0
+1868 silly saveTree │     │   └── invert-kv@1.0.0
+1868 silly saveTree │     ├── string-width@1.0.2
+1868 silly saveTree │     ├── window-size@0.1.4
+1868 silly saveTree │     └── y18n@3.2.1
+1868 silly saveTree └── uuid@3.3.2
+1869 warn notes_grpc@1.0.0 No repository field.
+1870 verbose stack Error: grpc@1.14.1 install: `node-pre-gyp install --fallback-to-build --library=static_library`
+1870 verbose stack Exit status 1
+1870 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+1870 verbose stack     at EventEmitter.emit (events.js:315:20)
+1870 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+1870 verbose stack     at ChildProcess.emit (events.js:315:20)
+1870 verbose stack     at maybeClose (internal/child_process.js:1048:16)
+1870 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
+1871 verbose pkgid grpc@1.14.1
+1872 verbose cwd /Users/abduldiallo/Desktop/GRPC/node-grpc-server-note-crud
+1873 verbose Darwin 19.6.0
+1874 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+1875 verbose node v14.15.0
+1876 verbose npm  v6.14.8
+1877 error code ELIFECYCLE
+1878 error errno 1
+1879 error grpc@1.14.1 install: `node-pre-gyp install --fallback-to-build --library=static_library`
+1879 error Exit status 1
+1880 error Failed at the grpc@1.14.1 install script.
+1880 error This is probably not a problem with npm. There is likely additional logging output above.
+1881 verbose exit [ 1, true ]

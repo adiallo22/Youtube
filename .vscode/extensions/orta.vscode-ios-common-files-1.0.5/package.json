@@ -1,0 +1,58 @@
+{
+	"name": "vscode-ios-common-files",
+	"displayName": "iOS Common Files",
+	"description": "Provides Syntax Highlighting to common iOS files e.g CocoaPods / Fastlane.",
+	"version": "1.0.5",
+	"publisher": "Orta",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"workspaceContains:Podfile",
+		"workspaceContains:*.podspec",
+		"workspaceContains:Fastfile",
+		"workspaceContains:fastlane/Fastfile",
+		"workspaceContains:Fastfile*",
+		"workspaceContains:*Fastfile"
+	],
+	"main": "./extension",
+	"icon": "icon.png",
+	"contributes": {
+		"languages": [
+			{
+				"id": "ruby",
+				"aliases": [
+					"Ruby",
+					"ruby"
+				],
+				"filenamePatterns": [
+					"Appfile",
+					"Deliverfile",
+					"Fastfile",
+					"Gymfile",
+					"Matchfile",
+					"Scanfile",
+					"Snapfile",
+					"Podfile",
+					"*.podspec",
+					"Fastfile*",
+					"*Fastfile"
+				]
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"vscode": "^0.11.0"
+	},
+	"__metadata": {
+		"id": "7a650208-b7a4-4e15-a6ee-612a82b2ef86",
+		"publisherId": "c22b4001-1af3-48d1-87ed-490c6c3b747f",
+		"publisherDisplayName": "Orta"
+	}
+}
