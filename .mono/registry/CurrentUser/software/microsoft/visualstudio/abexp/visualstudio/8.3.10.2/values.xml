@@ -1,0 +1,10 @@
+<values>
+<value name="EnabledFlights"
+type="string-array">
+<string>tn-none-15b</string>
+<string>tn-vsmacnps-7</string>
+<string>seg_installer_prod</string>
+<string>toggleblockcomment</string>
+<string>tasmigddvs</string>
+</value>
+</values>

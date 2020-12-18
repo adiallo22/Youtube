@@ -1,0 +1,3 @@
+# Note that this file will be overwritten by the Visual Studio for Mac installer/updater whenever OpenJDK is updated by it!
+export JAVA_HOME="/Users/abduldiallo/Library/Developer/Xamarin/jdk/microsoft_dist_openjdk_1.8.0.25"
+export PATH="\"/Users/abduldiallo/Library/Developer/Xamarin/jdk/microsoft_dist_openjdk_1.8.0.25\";$PATH"
